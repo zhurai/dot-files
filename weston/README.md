@@ -1,0 +1,2 @@
+- This file is located at ~/.config/weston.ini
+- This is used within my X11 environment with waydroid, with a startup script
