@@ -1,0 +1,8 @@
+[Unit]
+Description=Run Waydroid check every 30 minutes
+
+[Timer]
+OnUnitInactiveSec=1min
+
+[Install]
+WantedBy=timers.target

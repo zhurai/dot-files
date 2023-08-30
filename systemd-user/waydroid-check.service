@@ -1,0 +1,10 @@
+[Unit]
+Description=Check if Waydroid is running
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h
+ExecStart=%h/.bin/waydroid-check.sh
+
+[Install]
+WantedBy=default.target
