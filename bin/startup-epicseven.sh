@@ -3,7 +3,13 @@
 waydroid session stop 
 sleep 3 
 weston --width=1280 --height=720 &
-sleep 3 
+sleep 2
 WAYLAND_DISPLAY=wayland-1 waydroid session start &
-sleep 1
+sleep 2
 WAYLAND_DISPLAY=wayland-1 waydroid show-full-ui &
+sleep 2
+ln -s /mnt/SSD1/Development/Personal/dot-files/systemd-user/waydroid-check.service /home/zhurai/.config/systemd/user/waydroid-check.service 
+systemctl --user daemon-reload
+systemctl --user start waydroid-check.service
+
+
