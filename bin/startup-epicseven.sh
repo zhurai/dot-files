@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm ~/.config/systemd/user/waydroid-check.service
 waydroid session stop 
 sleep 3 
 weston --width=1280 --height=720 &
