@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Girls Frontline
+Comment=Genymotion
+Exec=/usr/bin/gmtool admin start --coldboot "Girls Frontline"
+Terminal=false
+Type=Application
+Categories=Game;

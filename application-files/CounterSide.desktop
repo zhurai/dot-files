@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=CounterSide
+Comment=Genymotion
+Exec=/usr/bin/gmtool admin start --coldboot "CounterSide"
+Terminal=false
+Type=Application
+Categories=Game;
