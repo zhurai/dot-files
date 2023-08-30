@@ -12,6 +12,7 @@ if pgrep "weston" > /dev/null 2>&1
         echo "weston is not running"
         echo "turning off waydroid session"
         waydroid session stop
-        systemctl --user disable waydroid-check.service
+        systemctl --user stop waydroid-check.service
+        #systemctl --user stop waydroid-check.timer
 fi
 
