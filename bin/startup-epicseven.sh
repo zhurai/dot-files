@@ -12,5 +12,7 @@ sleep 2
 ln -s /mnt/SSD1/Development/Personal/dot-files/systemd-user/waydroid-check.service /home/zhurai/.config/systemd/user/waydroid-check.service 
 systemctl --user daemon-reload
 systemctl --user start waydroid-check.service
+sleep 10
+waydroid app launch com.stove.epic7.google 
 
 
