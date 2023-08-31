@@ -7,6 +7,13 @@ if pgrep "weston" > /dev/null 2>&1
     then
         # weston is running
         echo "weston is still running"
+	output=$(tail /var/lib/waydroid/waydroid.log -n1)
+	if [ "$output" == "FROZEN" ] 
+		then
+			echo "waydroid seems to have crashed, restarting"
+			WAYLAND_DISPLAY=wayland-1 waydroid show-full-ui &
+	fi	
+	
     else
         # weston is not running
         echo "weston is not running"
