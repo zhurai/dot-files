@@ -18,7 +18,7 @@ deviceawk=subprocess.run(["awk","{ print $1 }"],input=devicegrep.stdout,capture_
 device=deviceawk.stdout.decode('utf-8').strip()
 
 # open vysor
-subprocess.Popen(["vysorapp","-s",device])
+subprocess.Popen(["vysorapp","-s",device],close_fds=True)
 time.sleep(10)
 
 # open the game
