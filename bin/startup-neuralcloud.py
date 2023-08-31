@@ -3,7 +3,7 @@
 # initial variables
 import subprocess
 import re
-import time
+from time import sleep
 game="Neural Cloud"
 gamepkg="com.sunborn.neuralcloud.en"
 
@@ -11,7 +11,7 @@ gamepkg="com.sunborn.neuralcloud.en"
 subprocess.Popen(["/usr/bin/gmtool","admin","start","--coldboot",game])
 
 # wait for it to boot fully
-time.sleep(25)
+sleep(25)
 
 # get the title and get the device id from it
 title=title=subprocess.run(["/usr/bin/xdotool","search", "--name",'Neural Cloud.*Genymotion',"getwindowname"],capture_output=True).stdout.decode('utf-8').strip()

@@ -3,7 +3,7 @@
 # initial variables
 import subprocess
 import re
-import time
+from time import sleep
 from random import randrange
 game="Pokemon Go"
 gamepkg0="com.cjin.pokegenie.standard"
@@ -22,12 +22,12 @@ device=deviceawk.stdout.decode('utf-8').strip()
 
 # open vysor
 subprocess.Popen(["vysorapp","-s",device],close_fds=True)
-time.sleep(10)
+sleep(10)
 
 # open pokegenie
 subprocess.Popen(["adb","-s",device,"shell","monkey","-p",gamepkg0,"1"])
 subprocess.Popen(["xdotool","search","-name", titlefilter,"set_window","--name",starttitle]) 
-time.sleep(10)
+sleep(10)
 
 # pokegenie: click to start overlays
 x1=231
@@ -35,7 +35,7 @@ x2=845
 y1=2080
 y2=2200
 subprocess.Popen(["adb","-s",device,"shell","input","tap",str(randrange(x1,x2)),str(randrange(y1,y2))])
-time.sleep(5)
+sleep(5)
 
 # pokegenie: confirm overlay (which autostarts pokemon go)
 x1=600
@@ -45,5 +45,5 @@ y2=1630
 subprocess.Popen(["adb","-s",device,"shell","input","tap",str(randrange(x1,x2)),str(randrange(y1,y2))])
 
 # other code if open game directly
-#time.sleep(10)
+#sleep(10)
 #subprocess.Popen(["adb","-s",device,"shell","monkey","-p",gamepkg1,"1"])

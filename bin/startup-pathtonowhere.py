@@ -3,7 +3,7 @@
 # initial variables
 import subprocess
 import re
-import time
+from time import sleep
 game="Path to Nowhere"
 gamepkg="com.zy.wqmt.global"
 search="OnePlus9" # this would have to change if it is a different device/model for others!
@@ -20,7 +20,7 @@ device=deviceawk.stdout.decode('utf-8').strip()
 
 # open vysor
 subprocess.Popen(["vysorapp","-s",device],close_fds=True)
-time.sleep(10)
+sleep(10)
 
 # open the game
 subprocess.Popen(["adb","-s",device,"shell","monkey","-p",gamepkg,"1"])
