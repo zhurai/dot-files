@@ -18,7 +18,8 @@ device=deviceawk.stdout.decode('utf-8').strip()
 
 # open vysor
 subprocess.Popen(["vysorapp","-s",device])
-sleep(10)
+time.sleep(10)
 
 # open the game
 subprocess.Popen(["adb","-s",device,"shell","monkey","-p",gamepkg,"1"])
+
