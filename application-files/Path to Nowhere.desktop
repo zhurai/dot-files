@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=vysorapp
+Name=Path to Nowhere
 Comment=Vysor
-Exec=python "/home/$USER/.bin/startup-girlsfrontline.py"
+Exec=python "/home/$USER/.bin/startup-pathtonowhere.py"
 Terminal=false
 Type=Application
