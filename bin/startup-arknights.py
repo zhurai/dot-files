@@ -1,18 +1,22 @@
 #!/usr/bin/python
+
+# initial variables
 import subprocess
 import re
 import time
-
 game="Arknights"
 gamepkg="com.YoStarEN.Arknights"
 
+# open the emulator instance
 subprocess.Popen(["/usr/bin/gmtool","admin","start","--coldboot",game])
+
+# wait for it to boot fully
 time.sleep(25)
 
+# get the title and get the device id from it
 title=title=subprocess.run(["/usr/bin/xdotool","search", "--name",'Arknights.*Genymotion',"getwindowname"],capture_output=True).stdout.decode('utf-8').strip()
-
 device_pattern=re.compile(r'(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\:\d{1,6})')
 device=re.search(device_pattern,title).group()
-print(device)
 
+# open the game
 subprocess.Popen(["adb","-s",device,"shell","monkey","-p",gamepkg,"1"])
