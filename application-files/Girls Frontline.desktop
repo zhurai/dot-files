@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Girls Frontline
 Comment=Genymotion
-Exec=/usr/bin/gmtool admin start --coldboot "Girls Frontline"
+Exec=python "/home/$USER/.bin/startup-girlsfrontline.py"
 Terminal=false
 Type=Application
 Categories=Game;
