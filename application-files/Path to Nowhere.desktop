@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=vysorapp
 Comment=Vysor
-Exec=sh -c "/home/$USER/.bin/startup-pathtonowhere.sh"
+Exec=python "/home/$USER/.bin/startup-girlsfrontline.py"
 Terminal=false
 Type=Application
