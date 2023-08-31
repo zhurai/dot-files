@@ -4,6 +4,7 @@
 import subprocess
 import re
 import time
+from random import randrange
 game="Pokemon Go"
 gamepkg0="com.cjin.pokegenie.standard"
 gamepkg1="com.nianticlabs.pokemongo"
@@ -28,5 +29,21 @@ subprocess.Popen(["adb","-s",device,"shell","monkey","-p",gamepkg0,"1"])
 subprocess.Popen(["xdotool","search","-name", titlefilter,"set_window","--name",starttitle]) 
 time.sleep(10)
 
-# open game directly
-subprocess.Popen(["adb","-s",device,"shell","monkey","-p",gamepkg1,"1"])
+# pokegenie: click to start overlays
+x1=231
+x2=845
+y1=2080
+y2=2200
+subprocess.Popen(["adb","-s",device,"shell","input","tap",str(randrange(x1,x2)),str(randrange(y1,y2))])
+time.sleep(5)
+
+# pokegenie: confirm overlay (which autostarts pokemon go)
+x1=600
+x2=1000
+y1=1475
+y2=1630
+subprocess.Popen(["adb","-s",device,"shell","input","tap",str(randrange(x1,x2)),str(randrange(y1,y2))])
+
+# other code if open game directly
+#time.sleep(10)
+#subprocess.Popen(["adb","-s",device,"shell","monkey","-p",gamepkg1,"1"])
