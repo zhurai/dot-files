@@ -20,9 +20,13 @@ devicegrep=subprocess.run(["grep",search],input=adbdevices.stdout,capture_output
 deviceawk=subprocess.run(["awk","{ print $1 }"],input=devicegrep.stdout,capture_output=True)
 device=deviceawk.stdout.decode('utf-8').strip()
 
+# killall vysor, otherwise issues occur with the script if a vysor window is already active
+subprocess.Popen(["killall","vysorapp"])
+sleep(5)
+
 # open vysor
 subprocess.Popen(["vysorapp","-s",device],close_fds=True)
-sleep(10)
+sleep(5)
 
 # open pokegenie
 subprocess.Popen(["adb","-s",device,"shell","monkey","-p",gamepkg0,"1"])
