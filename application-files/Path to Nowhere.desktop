@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=vysorapp
+Comment=Vysor
+Exec=sh -c "/home/$USER/.bin/startup-pathtonowhere.sh"
+Terminal=false
+Type=Application
