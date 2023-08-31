@@ -26,5 +26,3 @@ systemctl --user start waydroid-check.service
 # Start the game once one can be relatively sure Waydroid has been booted
 sleep 10 # if you don't have a delay there would be a race condition where it would try to launch the app while the OS is booting, which would just cause a crash
 waydroid app launch com.stove.epic7.google 
-
-
