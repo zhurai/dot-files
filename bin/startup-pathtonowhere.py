@@ -28,4 +28,6 @@ sleep(5)
 
 # open the game
 subprocess.Popen(["adb","-s",device,"shell","monkey","-p",gamepkg,"1"])
-subprocess.Popen(["xdotool","search","-name", titlefilter,"set_window","--name",starttitle]) 
+subprocess.Popen(["xdotool","search","-name",titlefilter,"windowsize","100%","100%"])
+subprocess.Popen(["xdotool","search","-name",titlefilter,"windowstate","--add","MAXIMIZED_VERT","--add","MAXIMIZED_HORZ"])
+subprocess.Popen(["xdotool","search","-name",titlefilter,"set_window","--name",starttitle]) 
