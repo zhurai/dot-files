@@ -1,2 +1,4 @@
 #!/bin/bash
-killall plasmashell ; plasmashell & >/dev/null 2>/dev/null
+killall plasmashell 
+sleep 1
+plasmashell > /dev/null 2>&1 &
