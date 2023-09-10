@@ -32,9 +32,9 @@ systemctl --user start waydroid-check.service
 # System seems to have started fully by now
 sleep 10 # if you don't have a delay there would be a race condition where it would try to launch the app while the OS is booting, which would just cause a crash
 timeout 1 waydroid log > ${TEMPFILE}
-DEVICE=$(cat ${TEMPFILE}  | grep ADB | grep -oE '((1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])' | sed 's/$/:5555/g')
+DEVICE=$(cat ${TEMPFILE} | grep ADB | tail -n 1 | grep -oE '((1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])' | sed 's/$/:5555/g')
 adb connect ${DEVICE} 
 WINDOW=$(xdotool search --class "weston" getwindowname)
-xdotool search --class "weston" set_window --name "${WINDOW} - ${DEVICE}" &
+xdotool search --class "weston" set_window --name "${WINDOW} - ${DEVICE} - Initial" &
 waydroid app launch ${APKPKG}
 
