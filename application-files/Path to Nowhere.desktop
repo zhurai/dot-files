@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Path to Nowhere
-Comment=Vysor
-Exec=python "/home/$USER/.bin/startup-pathtonowhere.py"
+Comment=Waydroid
+Exec=sh -c "/home/$USER/.bin/startup-pathtonowhere.sh"
 Terminal=false
 Type=Application
