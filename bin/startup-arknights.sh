@@ -4,6 +4,7 @@ GAME="Arknights"
 WIDTH=1920
 HEIGHT=1011
 TEMPFILE=/tmp/z.waydroid.${GAME,,}
+APKPKG="com.YoStarEN.Arknights"
 
 # make sure any previous waydroid sessions are stopped
 killall weston
@@ -32,7 +33,8 @@ systemctl --user start waydroid-check.service
 sleep 10 # if you don't have a delay there would be a race condition where it would try to launch the app while the OS is booting, which would just cause a crash
 timeout 1 waydroid log > ${TEMPFILE}
 DEVICE=$(cat ${TEMPFILE}  | grep ADB | grep -oE '((1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])' | sed 's/$/:5555/g')
-adb connect ${DEVICE} & 
+adb connect ${DEVICE} 
 WINDOW=$(xdotool search --class "weston" getwindowname)
 xdotool search --class "weston" set_window --name "${WINDOW} - ${DEVICE}" &
+waydroid app launch ${APKPKG}
 
