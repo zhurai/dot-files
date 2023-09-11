@@ -7,4 +7,3 @@ desktop="*.desktop"
 workingdir=$(dirname "$0")/../application-files
 find $workingdir/$desktop -exec chmod +x {} \; -exec cp {} ~/.local/share/applications/ \; -exec echo {} \;
 update-desktop-database ~/.local/share/applications
-

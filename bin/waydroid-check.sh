@@ -22,4 +22,3 @@ if pgrep "weston" > /dev/null 2>&1
         systemctl --user stop waydroid-check.service
         #systemctl --user stop waydroid-check.timer
 fi
-

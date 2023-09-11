@@ -37,4 +37,3 @@ adb connect ${DEVICE}
 WINDOW=$(xdotool search --class "weston" getwindowname)
 xdotool search --class "weston" set_window --name "${WINDOW} - ${DEVICE} - Initial" &
 waydroid app launch ${APKPKG}
-
