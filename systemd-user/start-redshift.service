@@ -1,0 +1,10 @@
+[Unit]
+Description=Start Redshift
+
+[Service]
+Type=simple
+Environment=DISPLAY=:0.0
+ExecStart=redshift -PO 1000
+
+[Install]
+WantedBy=default.target
