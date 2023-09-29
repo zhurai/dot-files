@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Arknights
-Comment=Waydroid
-Exec=sh -c "/home/$USER/.bin/startup-arknights.sh"
+Comment=Genymotion
+Exec=python "/home/$USER/.bin/startup-arknights.py"
 Terminal=false
 Type=Application
 Categories=Game;
