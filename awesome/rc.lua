@@ -121,9 +121,17 @@ mykeyboardlayout = awful.widget.keyboardlayout()
 -- Create a textclock widget
 mytextclock = wibox.widget.textclock()
 
+
+local function add_tag(tag_name,the_screen)
+    awful.tag.add(tag_name, {
+        screen = the_screen,
+        layout = awful.layout.suit.floating }):view_only()
+end
+
 screen.connect_signal("request::desktop_decoration", function(s)
+    for i=1,20 do add_tag(i,s) end
     -- Each screen has its own tag table.
-    awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
+    -- awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12 }, s, awful.layout.layouts[1])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
