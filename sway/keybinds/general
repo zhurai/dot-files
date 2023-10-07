@@ -5,7 +5,7 @@ bindsym $mod+Return exec $term
 bindsym $mod+Shift+q kill
 
 # Start your launcher
-bindsym $mod+d exec $menu
+bindsym $mod+space exec $menu
 
 # Reload the configuration file
 bindsym $mod+Shift+c reload
