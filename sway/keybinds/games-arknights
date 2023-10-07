@@ -1,0 +1,3 @@
+bindsym $mod+F1 /home/zhurai/.bin/arknights/arknights.mode.sh
+bindsym --release tab exec /home/zhurai/.bin/arknights/arknights.farming.startnext.sh
+
