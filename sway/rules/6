@@ -1,0 +1,2 @@
+assign [app_id="Waydroid"] 6
+for_window [app_id="Waydroid"] fullscreen
