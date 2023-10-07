@@ -13,6 +13,7 @@ if [[ "$curr_window" == *"Arknights"* ]]; then
     elif [[ "$output" == *"Raiding-Alternate"* ]]; then
       echo "Arknights \"Initial\"" > /tmp/zhurai-arknights.tmp
     fi
+    notify-send $(cat /tmp/zhurai-arknights.tmp | sed 's/^[[:space:]]*//g' | sed 's/[",]//g')
   else
     echo "Arknights \"Initial\"" > /tmp/zhurai-arknights.tmp
   fi
