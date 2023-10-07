@@ -7,6 +7,12 @@ include /home/zhurai/.config/sway/wallpaper/*
 # Key bindings
 include /home/zhurai/.config/sway/keybinds/*
 
+# Workspace Rules
+include /home/zhurai/.config/sway/rules/*
+
+# Autostart
+include /home/zhurai/.config/sway/autostart/*
+
 #
 # Status Bar:
 #
