@@ -1,3 +1,19 @@
-bindsym $mod+F1 /home/zhurai/.bin/arknights/arknights.mode.sh
 bindsym --release tab exec /home/zhurai/.bin/arknights/arknights.farming.startnext.sh
-
+bindsym --release 2 exec /home/zhurai/.bin/arknights/arknights.raiding.pause.sh
+bindsym --release s exec /home/zhurai/.bin/arknights/arknights.raiding.pause.sh
+bindsym --release space exec /home/zhurai/.bin/arknights/arknights.raiding.pause.sh
+bindsym --release w exec /home/zhurai/.bin/arknights/arknights.raiding.pause.sh
+bindsym --release x exec /home/zhurai/.bin/arknights/arknights.raiding.pause.sh
+bindsym --release grave exec /home/zhurai/.bin/arknights/arknights.raiding.pause2.sh
+bindsym --release 4 exec /home/zhurai/.bin/arknights/arknights.raiding.retreat.sh
+bindsym --release f exec /home/zhurai/.bin/arknights/arknights.raiding.retreat.sh 
+bindsym --release r exec /home/zhurai/.bin/arknights/arknights.raiding.retreat.sh
+bindsym --release v exec /home/zhurai/.bin/arknights/arknights.raiding.retreat.sh
+bindsym --release 3 exec /home/zhurai/.bin/arknights/arknights.raiding.skill.sh
+bindsym --release c exec /home/zhurai/.bin/arknights/arknights.raiding.skill.sh
+bindsym --release d exec /home/zhurai/.bin/arknights/arknights.raiding.skill.sh
+bindsym --release e exec /home/zhurai/.bin/arknights/arknights.raiding.skill.sh
+bindsym --release 1 exec /home/zhurai/.bin/arknights/arknights.raiding.speed.sh
+bindsym --release a exec /home/zhurai/.bin/arknights/arknights.raiding.speed.sh
+bindsym --release q exec /home/zhurai/.bin/arknights/arknights.raiding.speed.sh
+bindsym --release z exec /home/zhurai/.bin/arknights/arknights.raiding.speed.sh
