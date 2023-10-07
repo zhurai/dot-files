@@ -1,0 +1,10 @@
+[Unit]
+Description=End Blue Light Filter
+
+[Service]
+Type=simple
+WorkingDirectory=%h
+ExecStart=%h/.bin/timer-end-blue-light-filter.sh
+
+[Install]
+WantedBy=default.target

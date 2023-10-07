@@ -1,0 +1,11 @@
+[Unit]
+Description=Start Blue Light Filter
+
+[Service]
+Type=simple
+#Environment=DISPLAY=:0.0
+WorkingDirectory=%h
+ExecStart=%h/.bin/timer-start-blue-light-filter.sh
+
+[Install]
+WantedBy=default.target
