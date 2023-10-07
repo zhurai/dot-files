@@ -1,1 +1,1 @@
-assign [class="steam"] 18
+assign [class="^(steam)$"] 18
