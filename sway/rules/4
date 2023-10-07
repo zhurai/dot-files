@@ -1,0 +1,2 @@
+assign [class="Genymotion Player"] 4
+for_window [class="Genymotion Player" title="^Arknights.*"] move window to workspace 4
