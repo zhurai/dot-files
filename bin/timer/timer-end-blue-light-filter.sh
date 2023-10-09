@@ -1,8 +1,10 @@
 #!/bin/bash
 session_type=$(loginctl show-session $(awk '/tty/ {print $1}' <(loginctl)) -p Type | awk -F= '{print $2}')
+echo $session_type
 
 if [[ "$session_type" == "wayland" ]]; then
-  killall gammastep &
+  killall -s 9 gammastep
+  WAYLAND_DISPLAY=wayland-1 gammastep -PO 6500
 fi
 
 # X11
