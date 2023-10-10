@@ -1,8 +1,6 @@
 # Focus
-bindsym $mod+z focus left
-bindsym $mod+x focus right
-bindsym $mod+c focus up
-bindsym $mod+v focus down
+bindsym $mod+z focus left ; focus up
+bindsym $mod+x focus right ; focus down
 
 # Split current object
 #bindsym $mod+z splith
