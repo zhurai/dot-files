@@ -1,4 +1,4 @@
-assign [app_id="org.remmina.Remmina"] 16
+assign [title="Remmina Remote Desktop Client" app_id="org.remmina.Remmina"] 16
 for_window [title="^(?!Remmina Remote Desktop Client).*$" app_id="org.remmina.Remmina"] fullscreen disable
 for_window [title="^(?!Remmina Remote Desktop Client).*$" app_id="org.remmina.Remmina"] floating enable
 for_window [title="^(?!Remmina Remote Desktop Client).*$" app_id="org.remmina.Remmina" floating] resize set height 100 ppt
