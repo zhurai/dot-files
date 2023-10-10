@@ -1,0 +1,21 @@
+# Focus
+bindsym $mod+z focus left
+bindsym $mod+x focus right
+bindsym $mod+c focus up
+bindsym $mod+v focus down
+
+# Split current object
+#bindsym $mod+z splith
+#bindsym $mod+x splitv
+
+# Switch layout
+bindsym $mod+a layout toggle all
+
+# Toggle the current focus between tiling and floating mode
+#bindsym $mod+Shift+space floating toggle
+
+# Swap focus between the tiling area and the floating area
+#bindsym $mod+space focus mode_toggle
+
+# Move focus to the parent container
+#bindsym $mod+a focus parent
