@@ -1,0 +1,16 @@
+#!/bin/bash
+curr_window=$(swaymsg -t get_tree | jq -r '.. | (.nodes? // empty)[] | select (.pid and .visible) | {name}' | jq '.[]' | sed 's/[",]//g')
+title=$(swaymsg -t get_tree | grep Genymotion | grep "Girls Frontline" | grep title | awk '{$1=""}1' | sed 's/^[[:space:]]*//g' | sed 's/[",]//g')
+adb_device=$(echo $title | cut -d "-" -f 2 | sed 's/^[[:space:]]*//g')
+
+if [[ "$curr_window" == "$title" ]]; then
+  if [[ -f "/tmp/zhurai-girlsfrontline.tmp" ]]; then
+    output=$(cat /tmp/zhurai-girlsfrontline.tmp | awk '{$1=""}1' | sed 's/^[[:space:]]*//g' | sed 's/[",]//g')
+    if [ -n "$adb_device" ]; then
+      # range 1093,617 -> 1231,654
+      x=$(shuf -i 1093-1231 -n 1)
+      y=$(shuf -i 617-654 -n 1)
+      adb -s $adb_device shell input tap $x $y
+    fi
+  fi
+fi
