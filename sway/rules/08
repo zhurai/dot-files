@@ -1,4 +1,5 @@
-assign [title="Remmina Remote Desktop Client" app_id="org.remmina.Remmina"] 16
+set $ws_remote 8
+for_window [title="Remmina Remote Desktop Client" app_id="org.remmina.Remmina"] move container to workspace $ws_remote
 for_window [title="^(?!Remmina Remote Desktop Client).*$" app_id="org.remmina.Remmina"] fullscreen disable
 for_window [title="^(?!Remmina Remote Desktop Client).*$" app_id="org.remmina.Remmina"] floating enable
 for_window [title="^(?!Remmina Remote Desktop Client).*$" app_id="org.remmina.Remmina" floating] resize set height 100 ppt

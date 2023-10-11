@@ -1,0 +1,2 @@
+set $ws-games2 5
+for_window [class="Minecraft.*"] move container to workspace $ws-games2

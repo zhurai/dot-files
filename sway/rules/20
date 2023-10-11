@@ -1,1 +1,2 @@
-assign [app_id="com.obsproject.Studio"] 20
+set $ws_obs 20
+for_window [app_id="com.obsproject.Studio"] move container to workspace $ws_obs

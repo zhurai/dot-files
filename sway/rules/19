@@ -1,3 +1,2 @@
-assign [app_id="org.prismlauncher.PrismLauncher"] 19
-assign [class="Genymotion"] 19
-assign [app_id="lutris"] 19
+set $ws-tbd 19
+for_window [class="Slack"] move container to workspace $ws-tbd

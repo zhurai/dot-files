@@ -1,2 +1,0 @@
-for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] move container to workspace 7
-for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] fullscreen disable
