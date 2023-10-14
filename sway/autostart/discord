@@ -1,1 +1,1 @@
-exec discord
+exec /usr/bin/discord --enable-features=UseOzonePlatform --ozone-platform=wayland
