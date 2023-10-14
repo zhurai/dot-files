@@ -1,3 +1,5 @@
 set $ws_browser 3
+
+# Firefox
 for_window [class="firefox"] move container to workspace $ws_browser
 for_window [app_id="firefox"] move container to workspace $ws_browser

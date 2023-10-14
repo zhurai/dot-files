@@ -1,2 +1,4 @@
 set $ws_obs 20
+
+# Open Broadcaster Software
 for_window [app_id="com.obsproject.Studio"] move container to workspace $ws_obs

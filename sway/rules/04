@@ -1,10 +1,21 @@
 set $ws-game1 4
-for_window [class="Genymotion Player"] move container to workspace $ws-game1, layout tabbed
-for_window [app_id="Waydroid"] move container to workspace $ws-game1, layout tabbed
-for_window [class="counterside.exe"] move container to workspace $ws-game1, layout tabbed
-for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] move container to workspace $ws-game1, layout tabbed
 
-#for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] layout tabbed
+# Genymotion Player (Arknights, Girls Frontline)
+for_window [class="Genymotion Player"] move container to workspace $ws-game1
+for_window [class="Genymotion Player"] layout tabbed
+
+# Waydroid (Epic Seven)
+for_window [app_id="Waydroid"] move container to workspace $ws-game1
+for_window [app_id="Waydroid"] layout tabbed
+#for_window [app_id="Waydroid"] fullscreen
+
+# Lutris/Wine - Counter Side
+for_window [class="counterside.exe"] move container to workspace $ws-game1
+for_window [class="counterside.exe"] layout tabbed
+
+# Remote Desktop
+for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] move container to workspace $ws-game1
+for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] layout tabbed
 for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] floating disable
 for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] fullscreen disable
-#for_window [app_id="Waydroid"] fullscreen
+

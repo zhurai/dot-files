@@ -1,9 +1,21 @@
 set $ws-games2 5
-for_window [class="Minecraft.*"] move container to workspace $ws-games2, layout tabbed, fullscreen disable
-for_window [class="osu!.exe"] move container to workspace $ws-games2, layout tabbed
-for_window [title="osu!" class="dotnet"] move container to workspace $ws-games2, layout tabbed
-for_window [class="(steam_app_).*"] move container to workspace $ws-games2, layout tabbed
 
+# Minecraft
+for_window [class="Minecraft.*"] move container to workspace $ws-games2
+for_window [class="Minecraft.*"] layout tabbed
+for_window [class="Minecraft.*"] fullscreen disable
+
+# Osu!
+for_window [class="osu!.exe"] move container to workspace $ws-games2
+for_window [class="osu!.exe"] layout tabbed
+for_window [title="osu!" class="dotnet"] move container to workspace $ws-games2
+for_window [title="osu!" class="dotnet"] layout tabbed
+
+# All Steam Applications / Games
+for_window [class="(steam_app_).*"] move container to workspace $ws-games2
+for_window [class="(steam_app_).*"] layout tabbed
+
+# Steam - HoloCure Overrides
 for_window [title="HoloCure" class="(steam_app_2420510)"] floating disable
 for_window [title="HoloCure" class="(steam_app_2420510)"] resize set height 100
 for_window [title="HoloCure" class="(steam_app_2420510)"] resize set width 100
