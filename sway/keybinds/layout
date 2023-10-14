@@ -3,6 +3,7 @@ bindsym $mod+z focus left ; focus up
 bindsym $mod+x focus right ; focus down
 bindsym $mod+Page_Up focus left ; focus up
 bindsym $mod+Page_Down focus right ; focus down
+bindsym Alt+Tab focus right ; focus down
 
 # Split current object
 #bindsym $mod+z splith
