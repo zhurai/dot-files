@@ -1,1 +1,1 @@
-exec /usr/bin/discord --enable-features=UseOzonePlatform --ozone-platform=wayland
+exec DBUS_SESSION_BUS_ADDRESS="autolaunch:" /usr/bin/discord --enable-features=UseOzonePlatform --ozone-platform=wayland
