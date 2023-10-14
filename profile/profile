@@ -1,0 +1,4 @@
+PATH="/opt/android-sdk/platform-tools/:$PATH"
+PATH="$HOME/.local/bin:$PATH"
+PATH="$HOME/.bin:$PATH"
+export $(/usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator | xargs)
