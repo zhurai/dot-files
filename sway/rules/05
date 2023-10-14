@@ -1,5 +1,5 @@
 set $ws-games2 5
-for_window [class="Minecraft.*"] move container to workspace $ws-games2, layout tabbed
+for_window [class="Minecraft.*"] move container to workspace $ws-games2, layout tabbed, fullscreen disable
 for_window [class="osu!.exe"] move container to workspace $ws-games2, layout tabbed
 for_window [title="osu!" class="dotnet"] move container to workspace $ws-games2, layout tabbed
 for_window [class="(steam_app_).*"] move container to workspace $ws-games2, layout tabbed
