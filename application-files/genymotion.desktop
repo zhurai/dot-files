@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Genymotion
+Comment=Virtual environment for Android.
+Exec=env QT_QPA_PLATFORMTHEME=qt5ct QT_QPA_PLATFORM=xcb /usr/bin/genymotion
+Icon=/opt/genymotion/icons/genymotion-logo.png
+Terminal=false
+Categories=Development;
