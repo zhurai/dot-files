@@ -1,7 +1,0 @@
-set $ws-gamesupport 7
-for_window [class="^(steam)$"] move container to workspace $ws-gamesupport, layout tabbed
-for_window [app_id="org.prismlauncher.PrismLauncher"] move container to workspace $ws-gamesupport, layout tabbed
-for_window [class="^Genymotion$"] move container to workspace $ws-gamesupport, layout tabbed
-for_window [class="VirtualBox Manager"] move container to workspace $ws-gamesupport, layout tabbed
-for_window [app_id="lutris"] move container to workspace $ws-gamesupport, layout tabbed
-for_window [class="itch"] move container to workspace $ws-gamesupport, layout tabbed

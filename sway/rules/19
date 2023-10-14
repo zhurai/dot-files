@@ -1,2 +1,0 @@
-set $ws-tbd 19
-for_window [class="Slack"] move container to workspace $ws-tbd

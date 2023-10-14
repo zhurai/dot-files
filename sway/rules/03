@@ -1,2 +1,3 @@
-set $ws-discord 3
-for_window [class="discord"] move container to workspace $ws-discord
+set $ws_browser 3
+for_window [class="firefox"] move container to workspace $ws_browser
+for_window [app_id="firefox"] move container to workspace $ws_browser
