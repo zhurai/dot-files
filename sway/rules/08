@@ -1,11 +1,11 @@
 set $ws-support 8
-for_window [class="^(steam)$"] move container to workspace $ws-gamesupport, layout tabbed
-for_window [app_id="org.prismlauncher.PrismLauncher"] move container to workspace $ws-gamesupport, layout tabbed
-for_window [class="^Genymotion$"] move container to workspace $ws-gamesupport, layout tabbed
-for_window [class="VirtualBox Manager"] move container to workspace $ws-gamesupport, layout tabbed
-for_window [app_id="lutris"] move container to workspace $ws-gamesupport, layout tabbed
-for_window [class="itch"] move container to workspace $ws-gamesupport, layout tabbed
-for_window [title="Remmina Remote Desktop Client" app_id="org.remmina.Remmina"] move container to workspace $ws_support
+for_window [class="^(steam)$"] move container to workspace $ws-support, layout tabbed
+for_window [app_id="org.prismlauncher.PrismLauncher"] move container to workspace $ws-support, layout tabbed
+for_window [class="^Genymotion$"] move container to workspace $ws-support, layout tabbed
+for_window [class="VirtualBox Manager"] move container to workspace $ws-support, layout tabbed
+for_window [app_id="lutris"] move container to workspace $ws-support, layout tabbed
+for_window [class="itch"] move container to workspace $ws-support, layout tabbed
+for_window [title="Remmina Remote Desktop Client" app_id="org.remmina.Remmina"] move container to workspace $ws-support
 
 for_window [title="^(?!Remmina Remote Desktop Client).*$" app_id="org.remmina.Remmina"] move container to workspace
 for_window [title="^(?!Remmina Remote Desktop Client).*$" app_id="org.remmina.Remmina"] fullscreen disable
