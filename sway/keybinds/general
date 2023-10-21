@@ -4,7 +4,7 @@ bindsym $mod+Return exec $term
 # Kill focused window
 bindsym $mod+q kill
 
-# Start your launcher
+# Start launcher
 bindsym $mod+space exec $menu toggle
 
 # Reload the configuration file
@@ -16,5 +16,5 @@ bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. 
 # Screenshot
 bindsym $mod+s exec slurp | grim -g - screenshot.png
 
-# Fullscreen
+# Fullscreen current window
 bindsym $mod+f fullscreen
