@@ -1,6 +1,6 @@
 set $ws-game1 4
 
-# Genymotion Player (Arknights, Girls Frontline)
+# Genymotion Player
 for_window [class="Genymotion Player"] move container to workspace $ws-game1
 for_window [class="Genymotion Player"] layout tabbed
 
