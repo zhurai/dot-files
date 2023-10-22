@@ -7,6 +7,8 @@ for_window [class="Genymotion Player"] layout tabbed
 # Waydroid (Epic Seven)
 for_window [app_id="Waydroid"] move container to workspace $ws-game1
 for_window [app_id="Waydroid"] layout tabbed
+for_window [app_id="waydroid.com.stove.epic7.google"] move container to workspace $ws-game1
+for_window [app_id="waydroid.com.stove.epic7.google"] layout tabbed
 #for_window [app_id="Waydroid"] fullscreen
 
 # Lutris/Wine - Counter Side
