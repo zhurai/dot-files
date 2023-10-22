@@ -5,3 +5,6 @@ for_window [app_id="com.github.input-leap"] move container to workspace $ws-tool
 
 # Blueman (Bluetooth Manager)
 for_window [app_id="blueman-manager"] move container to workspace $ws-tools
+
+# Pavucontrol (Volume Control)
+for_window [app_id="pavucontrol"] move container to workspace $ws-tools

@@ -16,4 +16,7 @@ include /home/zhurai/.config/sway/rules/*
 # Autostart
 include /home/zhurai/.config/sway/autostart/*
 
+# Autostart
+include /home/zhurai/.config/sway/swayfx/*
+
 include /etc/sway/config.d/*
