@@ -1,4 +1,4 @@
-exec alacritty 
-exec alacritty 
-exec alacritty 
-exec alacritty 
+exec $term
+exec $term
+exec $term
+exec $term
