@@ -9,3 +9,9 @@ for_window [class="sc2_x64.exe"] fullscreen enable
 for_window [class="starcraft.exe"] move container to workspace $ws-games3
 for_window [class="starcraft.exe"] tabbed disable
 for_window [class="starcraft.exe"] fullscreen enable
+
+# Lutris - GW2
+for_window [class="gw2-64.exe"] move container to workspace $ws-games3
+for_window [class="gw2-64.exe"] tabbed disable
+for_window [class="gw2-64.exe"] fullscreen enable
+
