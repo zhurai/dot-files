@@ -43,6 +43,11 @@ for_window [title="MTGA" instance="mtga.exe"] move container to workspace $ws-ga
 for_window [instance="mtga.exe"] layout stacking
 for_window [instance="mtga.exe"] fullscreen enable
 
+# Lutris - HRL - Honkai Star Rail
+for_window [instance="starrail.exe"] move container to workspace $ws-games2
+for_window [instance="starrail.exe"] layout stacking
+for_window [instance="starrail.exe"] fullscreen enable
+
 # All Steam Applications / Games
 for_window [class="(steam_app_).*"] move container to workspace $ws-games2
 for_window [class="(steam_app_).*"] layout stacking
