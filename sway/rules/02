@@ -7,3 +7,8 @@ for_window [app_id="code*"] layout tabbed
 # Sublime Editor
 for_window [app_id="sublime_text"] move container to workspace $ws_editor
 for_window [app_id="sublime_text"] layout tabbed
+
+# Da Vinci Resolve
+for_window [class="resolve"] move container to workspace $ws_editor
+for_window [class="resolve"] layout tabbed
+for_window [title="Project Manager" class="resolve"] floating diable
