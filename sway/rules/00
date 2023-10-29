@@ -1,4 +1,4 @@
-for_window [app_id="albert"] floating enabled
+for_window [app_id="albert"] floating enable
 for_window [title="RemoteDevicePairingDialog" class="^(steam)$"] kill
 for_window [title="Wine System Tray" class="^(explorer.exe)$"] kill
 for_window [title="Battle.net Updates" class="battle.net.exe"] kill
