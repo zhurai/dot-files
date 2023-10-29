@@ -20,6 +20,10 @@ for_window [app_id="lutris"] layout tabbed
 for_window [title="Remmina Remote Desktop Client" app_id="org.remmina.Remmina"] move container to workspace $ws-support
 for_window [title="Remmina Remote Desktop Client" app_id="org.remmina.Remmina"] layout tabbed
 
+# Battle.net
+for_window [class="battle.net.exe"] move container to workspace $ws-support
+for_window [class="battle.net.exe"] layout tabbed
+
 # VirtualBox Manager
 for_window [class="VirtualBox Manager"] move container to workspace $ws-support
 for_window [class="VirtualBox Manager"] layout tabbed
