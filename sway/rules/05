@@ -1,21 +1,23 @@
-set $ws-games2 5
+set $ws-game1 5
 
-# Minecraft
-for_window [class="Minecraft.*"] move container to workspace $ws-games2
-for_window [class="Minecraft.*"] layout tabbed
-for_window [class="Minecraft.*"] fullscreen disable
+# Genymotion Player
+for_window [class="Genymotion Player"] move container to workspace $ws-game1
+for_window [class="Genymotion Player"] layout tabbed
 
-# Osu!
-for_window [class="osu!.exe"] move container to workspace $ws-games2
-for_window [class="osu!.exe"] layout tabbed
-for_window [title="osu!" class="dotnet"] move container to workspace $ws-games2
-for_window [title="osu!" class="dotnet"] layout tabbed
+# Waydroid (Epic Seven)
+for_window [app_id="Waydroid"] move container to workspace $ws-game1
+for_window [app_id="Waydroid"] layout tabbed
+for_window [app_id="waydroid.com.stove.epic7.google"] move container to workspace $ws-game1
+for_window [app_id="waydroid.com.stove.epic7.google"] layout tabbed
+#for_window [app_id="Waydroid"] fullscreen
 
-# All Steam Applications / Games
-for_window [class="(steam_app_).*"] move container to workspace $ws-games2
-for_window [class="(steam_app_).*"] layout tabbed
+# Lutris/Wine - Counter Side
+for_window [class="counterside.exe"] move container to workspace $ws-game1
+for_window [class="counterside.exe"] layout tabbed
 
-# Steam - HoloCure Overrides
-for_window [title="HoloCure" class="(steam_app_2420510)"] floating disable
-for_window [title="HoloCure" class="(steam_app_2420510)"] resize set height 100
-for_window [title="HoloCure" class="(steam_app_2420510)"] resize set width 100
+# Remote Desktop
+for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] move container to workspace $ws-game1
+for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] layout tabbed
+for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] floating disable
+for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] fullscreen disable
+

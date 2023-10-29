@@ -1,23 +1,17 @@
-set $ws-game1 4
+set $ws-chat 4
 
-# Genymotion Player
-for_window [class="Genymotion Player"] move container to workspace $ws-game1
-for_window [class="Genymotion Player"] layout tabbed
+# Discord
+for_window [class="discord"] move container to workspace $ws-chat
+for_window [class="discord"] layout tabbed
+for_window [app_id="discord"] move container to workspace $ws-chat
+for_window [app_id="discord"] layout tabbed
 
-# Waydroid (Epic Seven)
-for_window [app_id="Waydroid"] move container to workspace $ws-game1
-for_window [app_id="Waydroid"] layout tabbed
-for_window [app_id="waydroid.com.stove.epic7.google"] move container to workspace $ws-game1
-for_window [app_id="waydroid.com.stove.epic7.google"] layout tabbed
-#for_window [app_id="Waydroid"] fullscreen
+# Slack
+for_window [class="Slack"] move container to workspace $ws-chat
+for_window [class="Slack"] layout tabbed
+for_window [app_id="Slack"] move container to workspace $ws-chat
+for_window [app_id="Slack"] layout tabbed
 
-# Lutris/Wine - Counter Side
-for_window [class="counterside.exe"] move container to workspace $ws-game1
-for_window [class="counterside.exe"] layout tabbed
-
-# Remote Desktop
-for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] move container to workspace $ws-game1
-for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] layout tabbed
-for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] floating disable
-for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] fullscreen disable
-
+# Steam Friends List override
+for_window [title="Friends List" class="steam"] move container to workspace $ws-chat
+for_window [title="Friends List" class="steam"] layout tabbed
