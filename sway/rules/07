@@ -25,3 +25,8 @@ for_window [class="mtgo.exe"] move container to workspace $ws-games3
 for_window [class="mtgo.exe"] tabbed disable
 for_window [class="mtgo.exe"] fullscreen enable
 
+# Lutris - MTGA
+for_window [class="mtga.exe"] move container to workspace $ws-games3
+for_window [class="mtga.exe"] tabbed disable
+for_window [class="mtga.exe"] fullscreen enable
+
