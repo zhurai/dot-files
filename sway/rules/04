@@ -1,17 +1,5 @@
-set $ws-chat 4
+set $ws_browser 4
 
-# Discord
-for_window [class="discord"] move container to workspace $ws-chat
-for_window [class="discord"] layout tabbed
-for_window [app_id="discord"] move container to workspace $ws-chat
-for_window [app_id="discord"] layout tabbed
-
-# Slack
-for_window [class="Slack"] move container to workspace $ws-chat
-for_window [class="Slack"] layout tabbed
-for_window [app_id="Slack"] move container to workspace $ws-chat
-for_window [app_id="Slack"] layout tabbed
-
-# Steam Friends List override
-for_window [title="Friends List" class="steam"] move container to workspace $ws-chat
-for_window [title="Friends List" class="steam"] layout tabbed
+# Firefox
+for_window [class="firefox"] move container to workspace $ws_browser
+for_window [app_id="firefox"] move container to workspace $ws_browser
