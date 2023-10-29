@@ -11,11 +11,6 @@ for_window [class="osu!.exe"] layout tabbed
 for_window [title="osu!" class="dotnet"] move container to workspace $ws-games2
 for_window [title="osu!" class="dotnet"] layout tabbed
 
-# Lutris Battle.net - Hearthstone
-for_window [class="hearthstone.exe"] move container to workspace $ws-games2
-for_window [class="hearthstone.exe"] layout tabbed
-for_window [class="hearthstone.exe"] fullscreen disable
-
 # All Steam Applications / Games
 for_window [class="(steam_app_).*"] move container to workspace $ws-games2
 for_window [class="(steam_app_).*"] layout tabbed
