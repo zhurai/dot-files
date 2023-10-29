@@ -1,16 +1,21 @@
 set $ws-games3 7
 
-# Lutris Battle.net - SC2
+# Lutris Battle.net - StarCraft 2
 for_window [class="sc2_x64.exe"] move container to workspace $ws-games3
 for_window [class="sc2_x64.exe"] tabbed disable
 for_window [class="sc2_x64.exe"] fullscreen enable
 
-# Lutris Battle.net - SCBW
+# Lutris Battle.net - StarCraft BW
 for_window [class="starcraft.exe"] move container to workspace $ws-games3
 for_window [class="starcraft.exe"] tabbed disable
 for_window [class="starcraft.exe"] fullscreen enable
 
-# Lutris - GW2
+# Lutris - Guild Wars
+for_window [class="gw.exe"] move container to workspace $ws-games3
+for_window [class="gw.exe"] tabbed disable
+for_window [class="gw.exe"] fullscreen enable
+
+# Lutris - Guild Wars 2
 for_window [class="gw2-64.exe"] move container to workspace $ws-games3
 for_window [class="gw2-64.exe"] tabbed disable
 for_window [class="gw2-64.exe"] fullscreen enable
