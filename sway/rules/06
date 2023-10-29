@@ -48,6 +48,11 @@ for_window [instance="starrail.exe"] move container to workspace $ws-games2
 for_window [instance="starrail.exe"] layout stacking
 for_window [instance="starrail.exe"] fullscreen enable
 
+# Lutris - AGL - Genshin Impact
+for_window [instance="genshinimpact.exe"] move container to workspace $ws-games2
+for_window [instance="genshinimpact.exe"] layout stacking
+for_window [instance="genshinimpact.exe"] fullscreen enable
+
 # All Steam Applications / Games
 for_window [class="(steam_app_).*"] move container to workspace $ws-games2
 for_window [class="(steam_app_).*"] layout stacking
