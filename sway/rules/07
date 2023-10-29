@@ -1,0 +1,4 @@
+set $ws-games3 7
+
+# Lutris Battle.net - SC2
+for_window [class="sc2_x64.exe"] move container to workspace $ws-games3
