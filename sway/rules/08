@@ -28,6 +28,10 @@ for_window [title="Remmina Remote Desktop Client" app_id="org.remmina.Remmina"] 
 for_window [title="The Honkers Railway Launcher" app_id="moe.launcher.the-honkers-railway-launcher"] move container to workspace $ws-support
 for_window [title="The Honkers Railway Launcher" app_id="moe.launcher.the-honkers-railway-launcher"] layout tabbed
 
+# Anime Game Launcher
+for_window [title="An Anime Game Launcher" app_id="moe.launcher.an-anime-game-launcher"] move container to workspace $ws-support
+for_window [title="An Anime Game Launcher" app_id="moe.launcher.an-anime-game-launcher"] layout tabbed
+
 # Itch.io
 for_window [class="itch"] move container to workspace $ws-support
 for_window [class="itch"] layout tabbed
