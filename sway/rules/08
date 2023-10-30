@@ -1,8 +1,8 @@
 set $ws-support 8
 
 # Steam
-for_window [class="^(steam)$"] move container to workspace $ws-support
-for_window [class="^(steam)$"] layout tabbed
+for_window [title="^(?!Friends List)$" class="^(steam)$"] move container to workspace $ws-support
+for_window [title="^(?!Friends List)$" class="^(steam)$"] layout tabbed
 
 # Prism Launcher
 for_window [app_id="org.prismlauncher.PrismLauncher"] move container to workspace $ws-support
