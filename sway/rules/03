@@ -15,3 +15,7 @@ for_window [app_id="Slack"] layout tabbed
 # Steam Friends List override
 for_window [title="Friends List" class="steam"] move container to workspace $ws-chat
 for_window [title="Friends List" class="steam"] layout tabbed
+
+# Battle.NET Friends List (override)
+for_window [title="Battle.net - Friends" class="battle.net.exe"] move container to workspace $ws-chat
+for_window [title="Battle.net - Friends" class="battle.net.exe"] layout tabbed
