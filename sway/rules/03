@@ -12,7 +12,7 @@ for_window [class="Slack"] layout tabbed
 for_window [app_id="Slack"] move container to workspace $ws-chat
 for_window [app_id="Slack"] layout tabbed
 
-# Steam Friends List override
+# Steam Friends List (override)
 for_window [title="Friends List" class="steam"] move container to workspace $ws-chat
 for_window [title="Friends List" class="steam"] layout tabbed
 
