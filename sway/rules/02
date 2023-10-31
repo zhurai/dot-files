@@ -12,3 +12,20 @@ for_window [app_id="sublime_text"] layout tabbed
 for_window [class="resolve"] move container to workspace $ws_editor
 for_window [class="resolve"] layout tabbed
 for_window [title="Project Manager" class="resolve"] floating diable
+
+# Krita
+for_window [class="krita"] move container to workspace $ws_editor
+for_window [class="krita"] layout tabbed
+
+# Blender
+for_window [app_id="blender"] move container to workspace $ws_editor
+for_window [app_id="blender"] layout tabbed
+
+# GIMP
+for_window [class="Gimp"] move container to workspace $ws_editor
+for_window [class="Gimp"] layout tabbed
+
+# Inkscape
+for_window [app_id="org.inkscape.Inkscape"] move container to workspace $ws_editor
+for_window [app_id="org.inkscape.Inkscape"] layout tabbed
+for_window [app_id="org.inkscape.Inkscape"] floating diable
