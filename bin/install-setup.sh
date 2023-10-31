@@ -11,13 +11,20 @@ find $workingdir/$desktop -exec chmod +x {} \; -exec cp {} ~/.local/share/applic
 update-desktop-database ~/.local/share/applications
 
 workingdir=$(dirname $(realpath "$0"))/arknights
+mkdir ~/.bin/arknights
 find $workingdir -maxdepth 1 -type f ! -name "*.md" -exec chmod +x {} \; -exec ln -s {} ~/.bin/arknights \; -exec echo {} \;
 
 workingdir=$(dirname $(realpath "$0"))/games
+mkdir ~/.bin/games
 find $workingdir -maxdepth 1 -type f ! -name "*.md" -exec chmod +x {} \; -exec ln -s {} ~/.bin/games \; -exec echo {} \;
 
 workingdir=$(dirname $(realpath "$0"))/girlsfrontline
+mkdir ~/.bin/girlsfrontline
 find $workingdir -maxdepth 1 -type f ! -name "*.md" -exec chmod +x {} \; -exec ln -s {} ~/.bin/girlsfrontline \; -exec echo {} \;
+
+workingdir=$(dirname $(realpath "$0"))/waydroid
+mkdir ~/.bin/waydroid
+find $workingdir -maxdepth 1 -type f ! -name "*.md" -exec chmod +x {} \; -exec ln -s {} ~/.bin/waydroid \; -exec echo {} \;
 
 # timer scripts
 mkdir ~/.bin/timer/
