@@ -1,0 +1,2 @@
+bindsym --release Prior exec /home/zhurai/.bin/waydroid/waydroid.common.volumeup.sh
+bindsym --release Next exec /home/zhurai/.bin/waydroid/waydroid.common.volumedown.sh
