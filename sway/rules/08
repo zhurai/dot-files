@@ -16,6 +16,7 @@ for_window [class="^Genymotion$"] layout tabbed
 # Lutris
 for_window [app_id="lutris"] move container to workspace $ws-support
 for_window [app_id="lutris"] layout tabbed
+for_window [app_id="lutris"] floating disable
 
 # Battle.net
 for_window [title="^(?!.*Friends.*$)" class="battle.net.exe"] move container to workspace $ws-support
