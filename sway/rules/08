@@ -42,6 +42,10 @@ for_window [class="itch"] layout tabbed
 for_window [class="VirtualBox Manager"] move container to workspace $ws-support
 for_window [class="VirtualBox Manager"] layout tabbed
 
+# NoMachine main window
+for_window [title="^(NoMachine)$" class="Nxplayer.bin"] move container to workspace $ws-support
+for_window [title="^(NoMachine)$" class="Nxplayer.bin"] layout tabbed
+
 # Remmina Client (TBD)
 #for_window [title="^(?!Remmina Remote Desktop Client).*$" app_id="org.remmina.Remmina"] move container to workspace
 for_window [title="^(?!Remmina Remote Desktop Client).*$" app_id="org.remmina.Remmina"] fullscreen disable
