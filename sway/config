@@ -1,6 +1,9 @@
 # Variables
 include /home/zhurai/.config/sway/variables/*
 
+# Monitor outputs
+include /home/zhurai/.config/sway/outputs/*
+
 # Styling
 include /home/zhurai/.config/sway/style/*
 
@@ -20,3 +23,4 @@ include /home/zhurai/.config/sway/autostart/*
 include /home/zhurai/.config/sway/swayfx/*
 
 include /etc/sway/config.d/*
+
