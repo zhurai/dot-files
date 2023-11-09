@@ -20,5 +20,5 @@ sleep 10
 timeout 1 waydroid log > ${TEMPFILE}
 DEVICE=$(cat ${TEMPFILE} | grep ADB | tail -n 1 | grep -oE '((1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])' | sed 's/$/:5555/g')
 adb connect ${DEVICE} 
-sleep 30
+sleep 45
 waydroid app launch ${APKPKG}
