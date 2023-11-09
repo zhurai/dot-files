@@ -1,0 +1,5 @@
+output HEADLESS-1 {
+  enable
+  resolution 1920x1080
+  pos 3840,2160
+}
