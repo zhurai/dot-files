@@ -17,7 +17,7 @@ bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. 
 bindsym $mod+s exec slurp | grim -g - screenshot.png
 
 # Fullscreen current window
-bindsym $mod+f fullscreen
+bindsym --release $mod+f fullscreen
 
 # Float current window
 bindsym $mod+g floating toggle
