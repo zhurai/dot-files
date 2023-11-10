@@ -1,6 +1,7 @@
 focus output HDMI-A-1
 
-workspace 0 output HEADLESS-1
+workspace 0_1 output HEADLESS-1
+workspace 0_2 output HDMI-A-1
 workspace 1 output HDMI-A-1 HEADLESS-1
 workspace 2 output HDMI-A-1 HEADLESS-1
 workspace 3 output HDMI-A-1 HEADLESS-1
