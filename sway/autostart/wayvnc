@@ -1,0 +1,2 @@
+exec sleep 5 && swaymsg 'create_output "HEADLESS-1"'
+exec sleep 10 && wayvnc 10.77.0.1
