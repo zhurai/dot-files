@@ -4,6 +4,9 @@ include /home/zhurai/.config/sway/variables/*
 # Monitor outputs
 include /home/zhurai/.config/sway/outputs/*
 
+# Inputs
+include /home/zhurai/.config/sway/inputs/*
+
 # Styling
 include /home/zhurai/.config/sway/style/*
 
