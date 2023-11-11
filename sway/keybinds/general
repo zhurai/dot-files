@@ -21,3 +21,6 @@ bindsym --release $mod+f fullscreen
 
 # Float current window
 bindsym $mod+g floating toggle
+
+# ignore middle button (I do not want to paste with that button)
+bindsym --whole-window BTN_MIDDLE exec echo ""
