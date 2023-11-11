@@ -8,3 +8,6 @@ if [[ "$curr" == "$output0" ]]; then
 elif [[ "$curr" == "$output1" ]]; then
     swaymsg -rt get_workspaces | jq '.[]|.num' | xargs -I {} swaymsg workspace number {}, move workspace to output $output1
 fi
+
+swaymsg 'workspace 0_1'
+swaymsg 'workspace 0_2'
