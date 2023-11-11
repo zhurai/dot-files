@@ -5,7 +5,8 @@
 #if [[ "$session_type" == "wayland" ]]; then
 #  
 killall -s 9 gammastep
-#  WAYLAND_DISPLAY=wayland-1 gammastep -PO 1000 
+#  
+WAYLAND_DISPLAY=wayland-1 gammastep -PO 1000 
 #fi
 
 # X11
