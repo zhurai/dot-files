@@ -15,9 +15,3 @@ for_window [app_id="waydroid.com.stove.epic7.google"] layout tabbed
 for_window [class="counterside.exe"] move container to workspace $ws-game1
 for_window [class="counterside.exe"] layout tabbed
 
-# Remote Desktop
-for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] move container to workspace $ws-game1
-for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] layout tabbed
-for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] floating disable
-for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] fullscreen disable
-
