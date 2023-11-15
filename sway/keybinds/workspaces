@@ -15,12 +15,12 @@ bindsym $mod+9 workspace number 9
 bindsym $mod+0 workspace number 10
 
 # Change to previous/next workspace with left/right
-bindsym $mod+Left workspace prev
-bindsym $mod+Right workspace next
+bindsym $mod+Left workspace prev_on_output
+bindsym $mod+Right workspace next_on_output
 
 # Change first/last workspace with up/down
 bindsym $mod+Down workspace 1 
-bindsym $mod+Up workspace 1 ; workspace prev
+bindsym $mod+Up workspace 1 ; workspace prev_on_output
 
 # Move window to other workspaces
 bindsym $mod+Shift+1 move container to workspace number 1
