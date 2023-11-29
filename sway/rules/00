@@ -2,6 +2,8 @@ for_window [app_id="albert"] floating enable
 for_window [class="pdlaunch.bin"] move scratchpad
 for_window [title="^(Genymotion)$" class="Genymotion Player"] floating disable
 for_window [title="^(Genymotion)$" class="Genymotion Player"] move scratchpad
+for_window [title="^(Launcher)$" class="Wine"] floating disable
+for_window [title="^(Launcher)$" class="Wine"] move scratchpad
 for_window [title="Special Offers" class="steam"] kill
 for_window [title="RemoteDevicePairingDialog" class="^(steam)$"] kill
 for_window [title="Wine System Tray" class="^(explorer.exe)$"] kill
