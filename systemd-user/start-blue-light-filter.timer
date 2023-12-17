@@ -2,7 +2,7 @@
 Description=Start Blue Light Filter
 
 [Timer]
-OnCalendar=*-*-* 5:30:00
+OnCalendar=*-*-* 5:15:00
 Persistent=true
 
 [Install]
