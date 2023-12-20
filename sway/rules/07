@@ -49,3 +49,8 @@ for_window [title="^(NoMachine)$" class="Nxplayer.bin"] layout tabbed
 # RealVNC Viewer
 for_window [class="realvnc-vncviewer"] move container to workspace $ws-support
 for_window [class="realvnc-vncviewer"] layout tabbed
+
+# Vysor
+for_window [title="^(?!.*Vysor.*$)" class="vysor"] move container to workspace $ws-support
+for_window [title="^(?!.*Vysor.*$)" class="vysor"] layout tabbed
+for_window [title="^(?!.*Vysor.*$)" class="vysor"] floating disable
