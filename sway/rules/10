@@ -8,3 +8,6 @@ for_window [app_id="blueman-manager"] move container to workspace $ws-tools
 
 # Pavucontrol (Volume Control)
 for_window [app_id="pavucontrol"] move container to workspace $ws-tools
+
+# Pipewire Graph
+for_window [app_id="org.rncbc.qpwgraph"] move container to workspace $ws-tools
