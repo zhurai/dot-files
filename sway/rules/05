@@ -15,6 +15,6 @@ for_window [class="counterside.exe"] move container to workspace $ws-game1
 for_window [class="counterside.exe"] layout tabbed
 
 # Vysor
-for_window [title="^(?!.*Vysor.*$)" class="vysor"] move container to workspace $ws-support
+for_window [title="^(?!.*Vysor.*$)" class="vysor"] move container to workspace $ws-game1
 for_window [title="^(?!.*Vysor.*$)" class="vysor"] layout tabbed
 for_window [title="^(?!.*Vysor.*$)" class="vysor"] floating disable
