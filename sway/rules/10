@@ -1,8 +1,5 @@
 set $ws-tools 10
 
-# Input Leap
-for_window [app_id="com.github.input-leap"] move container to workspace $ws-tools
-
 # Blueman (Bluetooth Manager)
 for_window [app_id="blueman-manager"] move container to workspace $ws-tools
 
