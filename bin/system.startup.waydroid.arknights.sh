@@ -2,6 +2,7 @@
 
 GAME="EpicSeven"
 TEMPFILE=/tmp/z.waydroid.${GAME,,}
+TEMPFILE=/tmp/z.waydroid.ip
 APKPKG="com.stove.epic7.google"
 
 # make sure any previous waydroid sessions are stopped
@@ -22,4 +23,4 @@ DEVICE=$(cat ${TEMPFILE} | grep ADB | tail -n 1 | grep -oE '((1?[0-9][0-9]?|2[0-
 echo ${DEVICE} > ${TEMPFILE}
 adb connect ${DEVICE} 
 sleep 45
-waydroid app launch ${APKPKG}
+#waydroid app launch ${APKPKG}

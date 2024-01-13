@@ -1,6 +1,8 @@
 #!/bin/bash
 
 workingdir=$(dirname $(realpath "$0"))
+workingdirparent=$(dirname $workingdir)
+
 rm -rv ~/.bin
 
 mkdir ~/.bin
