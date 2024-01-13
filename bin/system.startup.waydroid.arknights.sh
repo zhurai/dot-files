@@ -1,9 +1,9 @@
 #!/bin/bash
 
-GAME="EpicSeven"
-TEMPFILE=/tmp/z.waydroid.${GAME,,}
-TEMPFILE=/tmp/z.waydroid.ip
-APKPKG="com.stove.epic7.google"
+GAME="Arknights"
+TEMPFILE=/tmp/z.waydroid
+rm /tmp/z.waydroid.*
+APKPKG="com.YoStarEN.Arknights"
 
 # make sure any previous waydroid sessions are stopped
 waydroid session stop 
@@ -21,6 +21,7 @@ sleep 10
 timeout 1 waydroid log > ${TEMPFILE}
 DEVICE=$(cat ${TEMPFILE} | grep ADB | tail -n 1 | grep -oE '((1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])' | sed 's/$/:5555/g')
 echo ${DEVICE} > ${TEMPFILE}
+echo "Game ${GAME}" >> ${TEMPFILE}
 adb connect ${DEVICE} 
 sleep 45
-#waydroid app launch ${APKPKG}
+waydroid app launch ${APKPKG}
