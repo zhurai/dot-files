@@ -4,7 +4,7 @@ Description=End Blue Light Filter
 [Service]
 Type=simple
 WorkingDirectory=%h
-ExecStart=%h/.bin/timer/timer-end-blue-light-filter.sh
+ExecStart=%h/.bin/system.timer.bluelightfilter.end.sh
 
 [Install]
 WantedBy=default.target

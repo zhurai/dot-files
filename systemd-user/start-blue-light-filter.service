@@ -5,7 +5,7 @@ Description=Start Blue Light Filter
 Type=simple
 #Environment=DISPLAY=:0.0
 WorkingDirectory=%h
-ExecStart=%h/.bin/timer/timer-start-blue-light-filter.sh
+ExecStart=%h/.bin/system.timer.bluelightfilter.start.sh
 
 [Install]
 WantedBy=default.target
