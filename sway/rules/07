@@ -1,9 +1,9 @@
 set $ws-support 7
 
 # Steam
-for_window [title="^(?!.*Friends List.*$)" class="steam"] move container to workspace $ws-support
-for_window [title="^(?!.*Friends List.*$)" class="steam"] layout tabbed
-for_window [title="^(?!.*Friends List.*$)" class="steam"] floating disable
+for_window [title="^(?!.*Friends List.*$)" class="^steam$"] move container to workspace $ws-support
+for_window [title="^(?!.*Friends List.*$)" class="^steam$"] layout tabbed
+for_window [title="^(?!.*Friends List.*$)" class="^steam$"] floating disable
 
 # Prism Launcher
 for_window [app_id="org.prismlauncher.PrismLauncher"] move container to workspace $ws-support
@@ -54,3 +54,8 @@ for_window [class="realvnc-vncviewer"] layout tabbed
 for_window [title="^Vysor$" class="vysor"] move container to workspace $ws-support
 for_window [title="^Vysor$" class="vysor"] layout tabbed
 for_window [title="^Vysor$" class="vysor"] floating disable
+
+# Android Studio + Emulator
+for_window [class="jetbrains-studio"] move container to workspace $ws-support
+for_window [class="jetbrains-studio"] layout tabbed
+for_window [class="jetbrains-studio"] floating disable

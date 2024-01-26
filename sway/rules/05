@@ -7,8 +7,8 @@ for_window [title="^(?!Genymotion$)" class="Genymotion Player"] layout tabbed
 # Waydroid (Epic Seven)
 for_window [app_id="Waydroid"] move container to workspace $ws-game1
 for_window [app_id="Waydroid"] layout tabbed
-for_window [app_id="waydroid.com.stove.epic7.google"] move container to workspace $ws-game1
-for_window [app_id="waydroid.com.stove.epic7.google"] layout tabbed
+for_window [app_id="waydroid.*"] move container to workspace $ws-game1
+for_window [app_id="waydroid.*"] layout tabbed
 
 # Lutris/Wine - Counter Side
 for_window [class="counterside.exe"] move container to workspace $ws-game1
@@ -23,3 +23,10 @@ for_window [title="^(?!.*Vysor.*$)" class="vysor"] floating disable
 for_window [app_id="scrcpy"] move container to workspace $ws-game1
 for_window [app_id="scrcpy"] layout tabbed
 for_window [app_id="scrcpy"] floating disable
+
+# Android Studio Emulator
+for_window [title="Android Emulator"] move container to workspace 2
+for_window [title="Emulator"] move container to workspace 2
+# $ws-game1
+#for_window [title="Android Emulator"] layout tabbed
+#for_window [title="Android Emulator"] floating disable

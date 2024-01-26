@@ -1,13 +1,5 @@
 set $ws-games2 6
 
-# Chromium
-for_window [class="Chromium"] move container to workspace $ws-games2
-for_window [class="Chromium"] layout stacking
-for_window [class="Chromium"] fullscreen enable
-for_window [app_id="chromium*"] move container to workspace $ws-games2
-for_window [app_id="chromium*"] layout stacking
-for_window [app_id="chromium*"] fullscreen enable
-
 # Minecraft
 for_window [class="Minecraft.*"] move container to workspace $ws-games2
 for_window [class="Minecraft.*"] layout stacking
@@ -64,6 +56,7 @@ for_window [instance="genshinimpact.exe"] fullscreen enable
 # All Steam Applications / Games
 for_window [class="(steam_app_).*"] move container to workspace $ws-games2
 for_window [class="(steam_app_).*"] layout stacking
+for_window [class="(steam_app_).*"] fullscreen enable
 
 # Steam - HoloCure Overrides
 for_window [title="HoloCure" class="(steam_app_2420510)"] floating disable

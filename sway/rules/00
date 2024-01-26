@@ -10,3 +10,4 @@ for_window [title="Special Offers" class="steam"] kill
 for_window [title="RemoteDevicePairingDialog" class="^(steam)$"] kill
 for_window [title="Wine System Tray" class="^(explorer.exe)$"] kill
 for_window [title="Battle.net Updates" class="battle.net.exe"] kill
+#for_window [title="Emulator"] move scratchpad
