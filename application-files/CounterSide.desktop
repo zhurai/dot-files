@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=CounterSide
-Comment=Genymotion
-Exec=python "/home/$USER/.bin/startup-counterside.py"
-Terminal=false
-Type=Application
-Categories=Game;
