@@ -9,7 +9,7 @@ ARKNIGHTS_CONFIG="/tmp/z.arknights.waydroid"
 if [[ "${window_class}" == "Waydroid" || "${window_class}" == *"waydroid"* ]]; then
   if [[ "${waydroid_game}" == "Arknights" ]]; then
     if [[ ! -f "$ARKNIGHTS_CONFIG" ]]; then
-      echo "Arknights Initial" > /tmp/z.arknights.waydroid
+      echo "Arknights Initial" > $ARKNIGHTS_CONFIG
       game=$(cat $ARKNIGHTS_CONFIG | cut -f 1 -d ' ')
       mode=$(cat $ARKNIGHTS_CONFIG | cut -f 2- -d ' ')
       notify-send "${game}" "${mode}"
@@ -18,22 +18,18 @@ if [[ "${window_class}" == "Waydroid" || "${window_class}" == *"waydroid"* ]]; t
 
     game=$(cat $ARKNIGHTS_CONFIG | cut -f 1 -d ' ')
     mode=$(cat $ARKNIGHTS_CONFIG | cut -f 2- -d ' ')
-    
     case "$mode" in
       "Initial")
-        sed 's/Initial/Farming/' $ARKNIGHTS_CONFIG
+        sed -i 's/Initial/Farming/' $ARKNIGHTS_CONFIG
         ;;
       "Farming")
-        sed 's/Farming/Raiding1/' $ARKNIGHTS_CONFIG
+        sed -i 's/Farming/Raiding1/' $ARKNIGHTS_CONFIG
         ;;
       "Raiding1")
-        sed 's/Raiding1/Raiding2/' $ARKNIGHTS_CONFIG
+        sed -i 's/Raiding1/Raiding2/' $ARKNIGHTS_CONFIG
         ;;
       "Raiding2")
-        sed 's/Raiding2/Initial/' $ARKNIGHTS_CONFIG
-        ;;
-      *)
-        echo "Arknights Initial" > $ARKNIGHTS_CONFIG
+        sed -i 's/Raiding2/Initial/' $ARKNIGHTS_CONFIG
         ;;
     esac      
         
