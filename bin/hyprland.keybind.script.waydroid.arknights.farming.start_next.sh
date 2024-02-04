@@ -15,7 +15,7 @@ if [[ ! -f "/tmp/z.arknights.waydroid" && -n "${waydroid_game}" ]]; then
   exit
 fi
 
-if [[ "${arknights_status}" == *"Farming"* ]]; then
+if [[ "${waydroid_game}" == "Arknights" && "${arknights_status}" == *"Farming"* ]]; then
   if [[ -n "$waydroid_adb" ]]; then
     x1=1569
     x2=1857
