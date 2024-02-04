@@ -9,13 +9,13 @@ if [[ "${window_class}" != "Waydroid" && "${window_class}" != *"waydroid"* ]]; t
 fi
 
 if [[ ! -f "/tmp/z.arknights.waydroid" && -n "${waydroid_game}" ]]; then
-  echo "Arknights \"Initial\"" > /tmp/z.arknights.waydroid
+  echo "Arknights Initial" > /tmp/z.arknights.waydroid
   output=$(cat /tmp/z.arknights.waydroid)
   notify-send $output
   exit
 fi
 
-if [[ "${waydroid_game}" == "Arknights" && "${arknights_status}" == *"Farming"* ]]; then
+if [[ "${waydroid_game}" == "Arknights" ]]; then
   if [[ -n "$waydroid_adb" ]]; then
     x1=1590
     x2=1700

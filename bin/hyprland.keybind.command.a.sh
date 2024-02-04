@@ -16,7 +16,7 @@ if [[ "$window_class" == "Waydroid" || "$window_class" == *"waydroid"* ]]; then
   waydroid_adb=$(cat /tmp/z.waydroid | head -n 1)
   waydroid_game=$(cat /tmp/z.waydroid | tail -n 1)
   if [[ "$waydroid_game" == "Arknights" ]]; then
-    ~/.bin/hyprland.keybind.script.waydroid.arknights.raiding.speed.sh
+    ~/.bin/hyprland.keybind.script.waydroid.arknights.common.speed.sh
   fi
 
 # If Scrcpy
