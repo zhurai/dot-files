@@ -14,16 +14,15 @@ window_class=$(hyprctl activewindow -j | jq '.class')
 # If Waydroid
 if [[ "$window_class" == "Waydroid" || "$window_class" == *"waydroid"* ]]; then
   ~/.bin/hyprland.keybind.script.common.games.get_mode.sh
-fi
 
 # If Scrcpy
-if [ "$window_class" == "scrcpy" ]; then
+elif [ "$window_class" == "scrcpy" ]; then
   ~/.bin/hyprland.keybind.script.common.games.get_mode.sh
-fi
 
 # If Genymotion
-if [ "$window_class" == "Genymotion Player" ]; then
+elif [ "$window_class" == "Genymotion Player" ]; then
   ~/.bin/hyprland.keybind.script.common.games.get_mode.sh
+
 fi
 
 
