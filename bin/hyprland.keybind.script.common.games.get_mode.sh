@@ -11,7 +11,7 @@ if [[ "${window_class}" == "Waydroid" || "${window_class}" == *"waydroid"* ]]; t
       mode=$(cat /tmp/z.arknights.waydroid | cut -f 2- -d ' ')
       notify-send "${game}" "${mode}"
     else
-      echo "Arknights \"Initial\"" > /tmp/z.arknights.waydroid
+      echo "Arknights Initial" > /tmp/z.arknights.waydroid
       game=$(cat /tmp/z.arknights.waydroid | cut -f 1 -d ' ')
       mode=$(cat /tmp/z.arknights.waydroid | cut -f 2- -d ' ')
       notify-send "${game}" "${mode}"

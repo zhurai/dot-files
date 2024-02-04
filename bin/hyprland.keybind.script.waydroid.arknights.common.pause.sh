@@ -9,7 +9,7 @@ if [[ "${window_class}" != "Waydroid" && "${window_class}" != *"waydroid"* ]]; t
 fi
 
 if [[ ! -f "/tmp/z.arknights.waydroid" && -n "${waydroid_game}" ]]; then
-  echo "Arknights \"Initial\"" > /tmp/z.arknights.waydroid
+  echo "Arknights Initial" > /tmp/z.arknights.waydroid
   output=$(cat /tmp/z.arknights.waydroid)
   notify-send $output
   exit
