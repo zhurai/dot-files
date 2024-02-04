@@ -20,8 +20,8 @@ sleep 10
 # System seems to have started fully by now
 timeout 1 waydroid log > ${TEMPFILE}
 DEVICE=$(cat ${TEMPFILE} | grep ADB | tail -n 1 | grep -oE '((1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])' | sed 's/$/:5555/g')
-echo ${DEVICE} > ${TEMPFILE}
-echo "Game ${GAME}" >> ${TEMPFILE}
+echo "${DEVICE}" > ${TEMPFILE}
+echo "${GAME}" >> ${TEMPFILE}
 adb connect ${DEVICE} 
 sleep 45
 waydroid app launch ${APKPKG}
