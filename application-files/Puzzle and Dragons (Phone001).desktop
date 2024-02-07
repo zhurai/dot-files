@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Puzzle and Dragons (Phone001)
+Comment=Scrcpy-Phone001
+Exec=sh -c "/home/$USER/.bin/system.startup.scrcpy-phone001.puzzleanddragons.sh"
+Terminal=false
+Type=Application
+Categories=Game;

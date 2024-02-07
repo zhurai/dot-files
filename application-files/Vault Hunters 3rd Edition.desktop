@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec="/usr/bin/prismlauncher" '--launch' 'Vault Hunters 3rd Edition'
+Name=Vault Hunters 3rd Edition
+Icon=/home/zhurai/.local/share/PrismLauncher/instances/Vault Hunters 3rd Edition/icon.png
+Terminal=false
+Categories=Game;
