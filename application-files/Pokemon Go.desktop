@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Pokemon Go
-Comment=Vysor
-Exec=python "/home/$USER/.bin/startup-pokemongo.py"
-Terminal=false
-Type=Application

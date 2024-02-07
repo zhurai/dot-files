@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Neural Cloud
-Comment=Genymotion
-Exec=python "/home/$USER/.bin/startup-neuralcloud.py"
-Terminal=false
-Type=Application
-Categories=Game;

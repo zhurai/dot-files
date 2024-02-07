@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Epic Seven (Waydroid)
-Comment=Waydroid
-Exec=sh -c "/home/$USER/.bin/startup-epicseven.sh"
-Terminal=false
-Type=Application
-Categories=Game;

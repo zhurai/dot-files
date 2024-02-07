@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Girls Frontline
-Comment=Genymotion
-Exec=python "/home/$USER/.bin/startup-girlsfrontline.py"
-Terminal=false
-Type=Application
-Categories=Game;

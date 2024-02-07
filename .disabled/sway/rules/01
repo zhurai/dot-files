@@ -1,8 +1,0 @@
-set $ws-terminal 1
-
-for_window [app_id="Alacritty"] move container to workspace $ws-terminal
-#for_window [app_id="Alacritty"] layout tabbed
-
-for_window [app_id="kitty"] move container to workspace $ws-terminal
-#for_window [app_id="kitty"] layout tabbed
-
