@@ -3,7 +3,8 @@
 GAME="Puzzle and Dragons"
 TEMPFILE=/tmp/z.scrcpy-phone000
 rm ${TEMPFILE}
-APKPKG="jp.gungho.padEN"
+# APKPKG="jp.gungho.padEN"
+APKPKG="jp.gungho.pad"
 TYPE="--serial"
 SERIAL="47f3c1bf"
 TITLE="\"${GAME} - ${SERIAL}\""
