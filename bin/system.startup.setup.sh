@@ -23,3 +23,6 @@ systemctl --user daemon-reload
 systemctl --user enable --now end-blue-light-filter.timer
 systemctl --user enable --now start-blue-light-filter.timer
 
+pactl unload-module module-loopback
+AUDIODEVICENAME=$(pactl list | grep "Starship/Matisse" -m1 -B3 -A50 | grep Name | cut -f 2 -d ' ')
+pactl load-module module-loopback latency_msec=1 source=${AUDIODEVICENAME}
