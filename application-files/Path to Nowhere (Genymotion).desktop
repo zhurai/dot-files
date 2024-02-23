@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Path to Nowhere (Genymotion)
-Comment=Genymotion
+Name=_Path to Nowhere (Genymotion)
+Comment=Genymotion, Not playing now
 Exec=sh -c "/home/$USER/.bin/system.startup.genymotion.pathtonowhere.sh"
 Terminal=false
 Type=Application
