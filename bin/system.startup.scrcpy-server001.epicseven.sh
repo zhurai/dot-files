@@ -15,7 +15,7 @@ VIDEOBITRATE="25M"
 STAYAWAKE="--stay-awake"
 #SCREENOFF="--turn-screen-off"
 LEGACYPASTE="--legacy-paste"
-CLOSEPOWEROFF="--power-off-on-close"
+#CLOSEPOWEROFF="--power-off-on-close"
 
 # make sure any previous sessions are stopped
 pkill -f -9 ${SERIAL}
