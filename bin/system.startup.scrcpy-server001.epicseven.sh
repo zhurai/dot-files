@@ -6,7 +6,8 @@ rm ${TEMPFILE}
 APKPKG="com.stove.epic7.google"
 TYPE="--tcpip"
 SERIAL="192.168.7.251:5555"
-TITLE="\"${GAME} - ${SERIAL}\""
+ID="Server001"
+TITLE="\"${GAME} - ${SERIAL} - ${ID}\""
 
 MODS="--shortcut-mod=lctrl+lalt"
 VIDEOCODEC="h264"
@@ -16,13 +17,15 @@ STAYAWAKE="--stay-awake"
 #SCREENOFF="--turn-screen-off"
 LEGACYPASTE="--legacy-paste"
 #CLOSEPOWEROFF="--power-off-on-close"
+#SIZE="-m 1024"
+#MOUSE="--mouse=uhid"
 
 # make sure any previous sessions are stopped
 pkill -f -9 ${SERIAL}
 sleep 1
 
 # start a new session
-scrcpy --window-title="${TITLE}" ${TYPE}="${SERIAL}" --video-codec="${VIDEOCODEC}" --video-encoder="${VIDEOENCODER}" --video-bit-rate="${VIDEOBITRATE}" ${STAYAWAKE} ${MODS} ${SCREENOFF} ${LEGACYPASTE} ${CLOSEPOWEROFF} &
+scrcpy --window-title="${TITLE}" ${TYPE}="${SERIAL}" --video-codec="${VIDEOCODEC}" --video-encoder="${VIDEOENCODER}" --video-bit-rate="${VIDEOBITRATE}" ${STAYAWAKE} ${MODS} ${SCREENOFF} ${LEGACYPASTE} ${CLOSEPOWEROFF} ${MOUSE} &
 sleep 1
 
 # System seems to have started fully by now
