@@ -7,7 +7,8 @@ rm ${TEMPFILE}
 APKPKG="jp.gungho.pad"
 TYPE="--serial"
 SERIAL="47f3c1bf"
-TITLE="\"${GAME} - ${SERIAL}\""
+ID="Phone000"
+TITLE="\"${GAME} - ${SERIAL} - ${ID}\""
 
 MODS="--shortcut-mod=lctrl+lalt"
 VIDEOCODEC="h265"

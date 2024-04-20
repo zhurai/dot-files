@@ -6,7 +6,8 @@ rm ${TEMPFILE}
 APKPKG="com.nianticlabs.pokemongo"
 TYPE="--serial"
 SERIAL="47f3c1bf"
-TITLE="\"${GAME} - ${SERIAL}\""
+ID="Phone000"
+TITLE="\"${GAME} - ${SERIAL} - ${ID}\""
 
 MODS="--shortcut-mod=lctrl+lalt"
 VIDEOCODEC="h265"
