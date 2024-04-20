@@ -9,8 +9,11 @@ find $workingdir -maxdepth 1 -type f ! -name "*.md" -exec chmod +x {} \; -exec l
 
 desktop="*.desktop"
 workingdir_=$workingdirparent/application-files
-find $workingdir_/$desktop -exec chmod +x {} \; -exec cp {} ~/.local/share/applications/ \; -exec echo {} \;
+rm -rf ~/.local/share/applications/personal/
+mkdir ~/.local/share/applications/personal -p
+find $workingdir_/$desktop -exec chmod +x {} \; -exec cp {} ~/.local/share/applications/personal/ \; -exec echo {} \;
 update-desktop-database ~/.local/share/applications
+rm ~/.cache/rofi* -v
 
 # systemd files
 rm -rv ~/.config/systemd/user/
@@ -24,5 +27,5 @@ systemctl --user enable --now end-blue-light-filter.timer
 systemctl --user enable --now start-blue-light-filter.timer
 
 pactl unload-module module-loopback
-AUDIODEVICENAME=$(pactl list | grep "Starship/Matisse" -m1 -B3 -A50 | grep Name | cut -f 2 -d ' ')
-pactl load-module module-loopback latency_msec=1 source=${AUDIODEVICENAME}
+AUDIODEVICENAME=$(pactl list | grep "Starship/Matisse" -B3 -A50 | grep Name | cut -f 2 -d ' ' | grep input)
+pactl load-module module-loopback latency_msec=1 source=$AUDIODEVICENAME
