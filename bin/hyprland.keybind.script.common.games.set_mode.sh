@@ -6,8 +6,8 @@ waydroid_game=$(cat /tmp/z.waydroid | tail -n 1)
 
 ARKNIGHTS_CONFIG="/tmp/z.arknights.waydroid"
 
-if [[ "${window_class}" == "Waydroid" || "${window_class}" == *"waydroid"* ]]; then
-  if [[ "${waydroid_game}" == "Arknights" ]]; then
+if [[ "${window_class}" == *"Waydroid"* || "${window_class}" == *"waydroid"* ]]; then
+  if [[ "${waydroid_game}" == *"Arknights"* ]]; then
     if [[ ! -f "$ARKNIGHTS_CONFIG" ]]; then
       echo "Arknights Initial" > $ARKNIGHTS_CONFIG
       game=$(cat $ARKNIGHTS_CONFIG | cut -f 1 -d ' ')

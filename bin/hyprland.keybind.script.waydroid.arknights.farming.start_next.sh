@@ -4,7 +4,7 @@ waydroid_adb=$(cat /tmp/z.waydroid | head -n 1)
 waydroid_game=$(cat /tmp/z.waydroid | tail -n 1)
 arknights_status=$(cat /tmp/z.arknights.waydroid | awk '{$1=""}1' | sed 's/^[[:space:]]*//g' | sed 's/[",]//g')
 
-if [[ "${window_class}" != "Waydroid" && "${window_class}" != *"waydroid"* ]]; then
+if [[ "${window_class}" != *"Waydroid"* && "${window_class}" != *"waydroid"* ]]; then
   exit
 fi
 
@@ -15,7 +15,7 @@ if [[ ! -f "/tmp/z.arknights.waydroid" && -n "${waydroid_game}" ]]; then
   exit
 fi
 
-if [[ "${waydroid_game}" == "Arknights" && "${arknights_status}" == *"Farming"* ]]; then
+if [[ "${waydroid_game}" == *"Arknights"* && "${arknights_status}" == *"Farming"* ]]; then
   if [[ -n "$waydroid_adb" ]]; then
     x1=1569
     x2=1857
@@ -26,4 +26,3 @@ if [[ "${waydroid_game}" == "Arknights" && "${arknights_status}" == *"Farming"* 
     adb -s $waydroid_adb shell input tap $x $y
   fi
 fi
-
