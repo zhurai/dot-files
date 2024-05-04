@@ -27,5 +27,9 @@ systemctl --user enable --now end-blue-light-filter.timer
 systemctl --user enable --now start-blue-light-filter.timer
 
 pactl unload-module module-loopback
-AUDIODEVICENAME=$(pactl list | grep "Starship/Matisse" -B3 -A50 | grep Name | cut -f 2 -d ' ' | grep input)
-pactl load-module module-loopback latency_msec=1 source=$AUDIODEVICENAME
+pactl unload-module module-native-protocol-tcp
+pactl unload-module module-zeroconf-publish
+#AUDIODEVICENAME=$(pactl list | grep "Starship/Matisse" -B3 -A50 | grep Name | cut -f 2 -d ' ' | grep input | grep pci)
+#pactl load-module module-loopback latency_msec=1 source=$AUDIODEVICENAME
+pactl load-module module-native-protocol-tcp listen=192.168.7.7
+pactl load-module module-zeroconf-publish
