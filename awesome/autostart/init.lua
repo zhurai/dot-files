@@ -1,0 +1,5 @@
+require("autostart.terminals")
+require("autostart.browser")
+require("autostart.chat")
+require("autostart.games")
+require("autostart.tools")
