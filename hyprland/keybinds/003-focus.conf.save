@@ -1,6 +1,6 @@
 bindn = Alt, Tab, cyclenext
 # movefocus, r
-
+			
 # move focus to left
 bindn = $mod, Z, movefocus, l
 bindn = $mod, Page_Up, changegroupactive, b

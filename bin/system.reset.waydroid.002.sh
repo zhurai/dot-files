@@ -8,7 +8,4 @@ fi
 # todo add initial startup of waydroid
 sudo waydroid-extras certified > /home/${USER}/waydroid-info
 sudo chown ${USER}:${USER} /home/${USER}/waydroid-info
-# how to automate certification?
-# how to automate login
-# how to automate install ak
 
