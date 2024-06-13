@@ -1,0 +1,61 @@
+set $ws-support 7
+
+# Steam
+for_window [title="^(?!.*Friends List.*$)" class="^steam$"] move container to workspace $ws-support
+for_window [title="^(?!.*Friends List.*$)" class="^steam$"] layout tabbed
+for_window [title="^(?!.*Friends List.*$)" class="^steam$"] floating disable
+
+# Prism Launcher
+for_window [app_id="org.prismlauncher.PrismLauncher"] move container to workspace $ws-support
+for_window [app_id="org.prismlauncher.PrismLauncher"] layout tabbed
+
+# Genymotion
+for_window [class="^Genymotion$"] move container to workspace $ws-support
+for_window [class="^Genymotion$"] layout tabbed
+
+# Lutris
+for_window [app_id="lutris"] move container to workspace $ws-support
+for_window [app_id="lutris"] layout tabbed
+for_window [app_id="lutris"] floating disable
+
+# Battle.net
+for_window [title="^(?!.*Friends.*$)" class="battle.net.exe"] move container to workspace $ws-support
+for_window [title="^(?!.*Friends.*$)" class="battle.net.exe"] layout tabbed
+
+# Remmina
+for_window [title="Remmina Remote Desktop Client" app_id="org.remmina.Remmina"] move container to workspace $ws-support
+for_window [title="Remmina Remote Desktop Client" app_id="org.remmina.Remmina"] layout tabbed
+
+# Honkers Railway Launcher
+for_window [title="The Honkers Railway Launcher" app_id="moe.launcher.the-honkers-railway-launcher"] move container to workspace $ws-support
+for_window [title="The Honkers Railway Launcher" app_id="moe.launcher.the-honkers-railway-launcher"] layout tabbed
+
+# Anime Game Launcher
+for_window [title="An Anime Game Launcher" app_id="moe.launcher.an-anime-game-launcher"] move container to workspace $ws-support
+for_window [title="An Anime Game Launcher" app_id="moe.launcher.an-anime-game-launcher"] layout tabbed
+
+# Itch.io
+for_window [class="itch"] move container to workspace $ws-support
+for_window [class="itch"] layout tabbed
+
+# VirtualBox Manager
+for_window [class="VirtualBox Manager"] move container to workspace $ws-support
+for_window [class="VirtualBox Manager"] layout tabbed
+
+# NoMachine main window
+for_window [title="^(NoMachine)$" class="Nxplayer.bin"] move container to workspace $ws-support
+for_window [title="^(NoMachine)$" class="Nxplayer.bin"] layout tabbed
+
+# RealVNC Viewer
+for_window [class="realvnc-vncviewer"] move container to workspace $ws-support
+for_window [class="realvnc-vncviewer"] layout tabbed
+
+# Vysor
+for_window [title="^Vysor$" class="vysor"] move container to workspace $ws-support
+for_window [title="^Vysor$" class="vysor"] layout tabbed
+for_window [title="^Vysor$" class="vysor"] floating disable
+
+# Android Studio + Emulator
+for_window [class="jetbrains-studio"] move container to workspace $ws-support
+for_window [class="jetbrains-studio"] layout tabbed
+for_window [class="jetbrains-studio"] floating disable

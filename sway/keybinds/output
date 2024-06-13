@@ -1,0 +1,1 @@
+bindsym --release Shift+F1 exec /home/zhurai/.bin/sway-move-workspaces.sh

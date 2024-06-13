@@ -1,0 +1,5 @@
+bindsym --release Prior exec /home/zhurai/.bin/sway.keybind.command.pageup.sh
+bindsym --release Next exec /home/zhurai/.bin/sway.keybind.command.pagedown.sh
+
+#bindsym --release F1 exec /home/zhurai/.bin/games/get-mode.sh
+#bindsym --release F2 exec /home/zhurai/.bin/games/set-mode.sh
