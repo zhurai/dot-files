@@ -1,11 +1,4 @@
-#bar {
-#    position top
-#
-#    status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done
-#    font monospace 10
-#    colors {
-#        statusline #ffffff
-#        background #323232
-#        inactive_workspace #32323200 #32323200 #5c5c5c
-#    }
-#}
+bar {
+    position top
+    mode invisible
+}
