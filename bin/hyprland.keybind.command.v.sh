@@ -23,6 +23,9 @@ if [[ "$window_class" == *"Waydroid"* || "$window_class" == *"waydroid"* ]]; the
 # elif [ "$window_class" == *"scrcpy"* ]; then
 
 # If Genymotion
-# elif [ "$window_class" == *"Genymotion Player"* ]; then
+elif [[ "$window_class" == *"Genymotion Player"* ]]; then
+  if [[ "$window_game" == *"Arknights"* ]]; then
+    ~/.bin/hyprland.keybind.script.genymotion.arknights.raiding.retreat.sh
+  fi
 
 fi

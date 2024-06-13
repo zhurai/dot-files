@@ -10,6 +10,7 @@ fi
 # Confirm the window class
 window_title=$(hyprctl activewindow -j | jq '.title')
 window_class=$(hyprctl activewindow -j | jq '.class')
+window_game=$(hyprctl activewindow -j | jq '.title' | sed 's|"||g' | awk '{print $1}')
 
 # If Waydroid
 if [[ "$window_class" == *"Waydroid"* || "$window_class" == *"waydroid"* ]]; then
