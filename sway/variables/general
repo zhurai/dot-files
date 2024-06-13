@@ -1,9 +1,3 @@
 # Mod Key
 set $mod Mod4
 
-# Location keys
-set $left h
-set $down j
-set $up k
-set $right l
-
