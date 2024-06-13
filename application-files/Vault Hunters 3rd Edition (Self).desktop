@@ -1,4 +1,5 @@
 [Desktop Entry]
+Name=Vault Hunters 3rd Edition (Self Modifications)
 Type=Application
 Exec="/usr/bin/prismlauncher" '--launch' 'Vault Hunters 3rd Edition (Self)'
 Name=Vault Hunters 3rd Edition (Self)
