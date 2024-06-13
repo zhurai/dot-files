@@ -4,8 +4,8 @@ bindsym $mod+Return exec $term
 # Kill focused window
 bindsym $mod+q kill
 
-# Start launcher
-bindsym $mod+space exec $menu toggle
+# Force kill focused window's process (TBD)
+# bindsym $mod+Shift+q kill
 
 # Reload the configuration file
 bindsym $mod+Shift+c reload
@@ -13,14 +13,7 @@ bindsym $mod+Shift+c reload
 # Exit sway (logs you out of your Wayland session)
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
-# Screenshot
-bindsym $mod+s exec slurp | grim -g - screenshot.png
-
-# Fullscreen current window
-bindsym --release $mod+f fullscreen
-
-# Float current window
-bindsym $mod+g floating toggle
-
 # ignore middle button (I do not want to paste with that button)
 bindsym --whole-window button2 exec echo " "
+
+
