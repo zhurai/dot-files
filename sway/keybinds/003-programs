@@ -1,0 +1,11 @@
+# Start terminal
+bindsym $mod+return exec $term
+
+# Start launcher
+bindsym $mod+space exec wofi --show drun,run
+
+# Screenshot
+bindsym $mod+s exec slurp | grim -g - screenshot.png
+bindsym $mod+shift+s exec grim screenshot.png
+
+# Discord PTT

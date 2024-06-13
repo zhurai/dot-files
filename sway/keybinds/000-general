@@ -1,0 +1,15 @@
+# Kill focused window
+bindsym $mod+q kill
+
+# Force kill focused window's process (TBD)
+# bindsym $mod+shift+q kill
+
+# Reload the configuration file
+bindsym $mod+shift+c reload
+
+# Exit sway (logs you out of your Wayland session)
+bindsym $mod+shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+
+# ignore middle button (I do not want to paste with that button)
+bindsym --whole-window button2 exec echo " "
+

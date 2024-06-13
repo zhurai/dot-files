@@ -1,0 +1,5 @@
+# Fullscreen active window
+bindsym $mod+f fullscreen
+
+# Float/Unfloat active window
+bindsym $mod+g floating toggle
