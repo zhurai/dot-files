@@ -54,7 +54,7 @@ start_game() {
 
 }
 
-waydroid_main() {
+main() {
 
   # Arguments
   GAME=${1:"None"}
