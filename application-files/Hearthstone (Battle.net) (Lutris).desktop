@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Hearthstone (Battle.net) (Lutris)
+Comment=Lutris
+Exec=sh -c "/home/$USER/.bin/system.startup.lutris.battlenet.hearthstone.sh"
+Terminal=false
+Type=Application
+Categories=Game;

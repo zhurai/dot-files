@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=StarCraft: Brood War (Battle.net) (Lutris)
+Comment=Lutris
+Exec=sh -c "/home/$USER/.bin/system.startup.lutris.battlenet.scbw.sh"
+Terminal=false
+Type=Application
+Categories=Game;
