@@ -1,0 +1,2 @@
+exec dbus-update-activation-environment --systemd --all
+exec systemctl import-environment XDG_SESSION_TYPE XDG_CURRENT_DESKTOP WAYLAND_DISPLAY QT_QPA_PLATFORMTHEME

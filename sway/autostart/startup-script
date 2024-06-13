@@ -1,0 +1,2 @@
+exec sleep 30; /mnt/SSD1/Development/Personal/dot-files/bin/system.startup.setup.sh
+
