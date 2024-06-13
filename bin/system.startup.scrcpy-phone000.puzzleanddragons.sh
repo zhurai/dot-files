@@ -11,8 +11,8 @@ ID="Phone000"
 TITLE="\"${GAME} - ${SERIAL} - ${ID}\""
 
 MODS="--shortcut-mod=lctrl+lalt"
-VIDEOCODEC="h265"
-VIDEOENCODER="OMX.qcom.video.encoder.hevc"
+VIDEOCODEC="h264"
+#VIDEOENCODER="OMX.qcom.video.encoder.hevc"
 VIDEOBITRATE="25M"
 STAYAWAKE="--stay-awake"
 SCREENOFF="--turn-screen-off"
@@ -24,7 +24,7 @@ pkill -f -9 ${SERIAL}
 sleep 1
 
 # start a new session
-scrcpy --window-title="${TITLE}" ${TYPE}="${SERIAL}" --video-codec="${VIDEOCODEC}" --video-encoder="${VIDEOENCODER}" --video-bit-rate="${VIDEOBITRATE}" ${STAYAWAKE} ${MODS} ${SCREENOFF} ${LEGACYPASTE} ${CLOSEPOWEROFF} &
+SDL_AUDIODRIVER=pipewire scrcpy --window-title="${TITLE}" ${TYPE}="${SERIAL}" --video-codec="${VIDEOCODEC}" --video-encoder="${VIDEOENCODER}" --video-bit-rate="${VIDEOBITRATE}" ${STAYAWAKE} ${MODS} ${SCREENOFF} ${LEGACYPASTE} ${CLOSEPOWEROFF} &
 sleep 1
 
 # System seems to have started fully by now

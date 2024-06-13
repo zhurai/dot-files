@@ -1,17 +1,17 @@
 #!/bin/bash
 
-GAME="Pokemon Go"
-TEMPFILE=/tmp/z.scrcpy-phone000
+GAME="Reverse1999"
+TEMPFILE=/tmp/z.scrcpy-phone001
 rm ${TEMPFILE}
-APKPKG="com.nianticlabs.pokemongo"
+APKPKG="com.bluepoch.m.en.reverse1999"
 TYPE="--serial"
-SERIAL="47f3c1bf"
-ID="Phone000"
+SERIAL="9889aa434350565943"
+ID="Phone001"
 TITLE="\"${GAME} - ${SERIAL} - ${ID}\""
 
 MODS="--shortcut-mod=lctrl+lalt"
 VIDEOCODEC="h264"
-#VIDEOENCODER="OMX.qcom.video.encoder.hevc"
+#VIDEOENCODER="OMX.qcom.video.encoder.avc"
 VIDEOBITRATE="25M"
 STAYAWAKE="--stay-awake"
 SCREENOFF="--turn-screen-off"
@@ -23,7 +23,7 @@ pkill -f -9 ${SERIAL}
 sleep 1
 
 # start a new session
-SDL_AUDIODRIVER=pipewire scrcpy --window-title="${TITLE}" ${TYPE}="${SERIAL}" --video-codec="${VIDEOCODEC}" --video-encoder="${VIDEOENCODER}" --video-bit-rate="${VIDEOBITRATE}" ${STAYAWAKE} ${MODS} ${SCREENOFF} ${LEGACYPASTE} ${CLOSEPOWEROFF} &
+scrcpy --window-title="${TITLE}" ${TYPE}="${SERIAL}" --video-codec="${VIDEOCODEC}" --video-encoder="${VIDEOENCODER}" --video-bit-rate="${VIDEOBITRATE}" ${STAYAWAKE} ${MODS} ${SCREENOFF} ${LEGACYPASTE} ${CLOSEPOWEROFF} &
 sleep 1
 
 # System seems to have started fully by now
