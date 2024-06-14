@@ -1,21 +1,14 @@
-set $ws-chat 3
+set $ws-games-general 3
 
-# Discord
-for_window [class="discord"] move container to workspace $ws-chat
-for_window [class="discord"] layout tabbed
-for_window [app_id="discord"] move container to workspace $ws-chat
-for_window [app_id="discord"] layout tabbed
+# Mahjong Soul
+for_window [title="MahjongSoul - Chromium" class="chromium"] move container to workspace $ws-games-general
 
-# Slack
-for_window [class="Slack"] move container to workspace $ws-chat
-for_window [class="Slack"] layout tabbed
-for_window [app_id="Slack"] move container to workspace $ws-chat
-for_window [app_id="Slack"] layout tabbed
+# Steam games
+for_window [class="steam_app_"] move container to workspace $ws-games-general
 
-# Steam Friends List (override)
-for_window [title="Friends List" class="steam"] move container to workspace $ws-chat
-for_window [title="Friends List" class="steam"] layout tabbed
+# Minecraft
+for_window [class="Minecraft"] move container to workspace $ws-games-general
+for_window [class="Minecraft"] fullscreen enable
 
-# Battle.NET Friends List (override)
-for_window [title="Battle.net - Friends" class="battle.net.exe"] move container to workspace $ws-chat
-for_window [title="Battle.net - Friends" class="battle.net.exe"] layout tabbed
+
+
