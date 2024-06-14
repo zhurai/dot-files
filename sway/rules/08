@@ -1,13 +1,1 @@
-# Remote Desktop
-for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] move container to workspace 8
-for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] layout tabbed
-for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] floating disable
-for_window [title="^zHome-zServer001$" app_id="org.remmina.Remmina"] fullscreen disable
-
-# Remmina Client (TBD)
-#for_window [title="^(?!Remmina Remote Desktop Client).*$" app_id="org.remmina.Remmina"] move container to workspace
-for_window [title="^(?!Remmina Remote Desktop Client).*$" app_id="org.remmina.Remmina"] fullscreen disable
-for_window [title="^(?!Remmina Remote Desktop Client).*$" app_id="org.remmina.Remmina"] floating enable
-for_window [title="^(?!Remmina Remote Desktop Client).*$" app_id="org.remmina.Remmina" floating] resize set height 100 ppt
-for_window [title="^(?!Remmina Remote Desktop Client).*$" app_id="org.remmina.Remmina" floating] resize set width 100 ppt
-for_window [title="^(?!Remmina Remote Desktop Client).*$" app_id="org.remmina.Remmina" floating] move position 0 px 0 px
+# ?
