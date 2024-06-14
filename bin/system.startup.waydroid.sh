@@ -28,7 +28,7 @@ populate_tempfile() {
   timeout 1 waydroid log > "${TEMPFILE}"
   
   SERIAL=$(cat "${TEMPFILE}" | grep ADB | tail -n 1 | grep -oE '((1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])' | sed 's/$/:5555/g')
-  echo "${SERIAL}" | tee "${TEMPFILE}"
+  echo "${SERIAL}" > "${TEMPFILE}"
   
   adb connect "${SERIAL}"
   
