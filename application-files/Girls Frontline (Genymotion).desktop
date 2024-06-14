@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Girls Frontline (Genymotion)
 Comment=Genymotion
-Exec=sh -c "/home/$USER/.bin/system.startup.genymotion.girlsfrontline.sh"
+Exec=sh -c "/home/$USER/.bin/system.startup.genymotion.girls-frontline.sh"
 Terminal=false
 Type=Application
 Categories=Game;

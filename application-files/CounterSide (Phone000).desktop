@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=CounterSide (Phone000)
+Comment=Scrcpy-Phone000
+Exec=sh -c "/home/$USER/.bin/system.startup.scrcpy.phone000.counter-side.sh"
+Terminal=false
+Type=Application
+Categories=Game;
