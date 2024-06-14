@@ -6,6 +6,7 @@ bindsym $mod+space exec wofi --show drun,run
 
 # Screenshot
 bindsym $mod+s exec slurp | grim -g - screenshot.png
-bindsym $mod+shift+s exec grim screenshot.png
+bindsym $mod+shift+s exec slurp | grim -g - - | wl-copy
+bindsym $mod+ctrl+s exec grim screenshot.png
 
 # Discord PTT
