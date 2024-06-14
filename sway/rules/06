@@ -1,5 +1,5 @@
-set $ws_games_mtgo 6
+set $ws-games-mtgo 6
 
 # MTGO
-for_window [class="mtgo.exe"] move container to workspace $ws_games_mtgo
+for_window [class="mtgo.exe"] move container to workspace $ws-games-mtgo
 for_window [class="mtgo.exe"] layout stacking

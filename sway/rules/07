@@ -1,6 +1,6 @@
-set $ws_games_mtga 7
+set $ws-games-mtga 7
 
 # MTGA
-for_window [title="MTGA" instance="mtga.exe"] move container to workspace $ws_games_mtga
+for_window [title="MTGA" instance="mtga.exe"] move container to workspace $ws-games-mtga
 for_window [instance="mtga.exe"] layout stacking
 for_window [instance="mtga.exe"] fullscreen enable

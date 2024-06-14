@@ -1,48 +1,48 @@
-set $ws-tools 10
+set $ws-tools-misc 10
 
 # Pavucontrol (Volume Control)
-for_window [app_id="pavucontrol"] move container to workspace $ws-tools
+for_window [app_id="pavucontrol"] move container to workspace $ws-tools-misc
 
 # Discord
-for_window [app_id="WebCord"] move container to workspace $ws-tools
-for_window [class="WebCord"] move container to workspace $ws-tools
-for_window [app_id="vesktop"] move container to workspace $ws-tools
-for_window [class="vesktop"] move container to workspace $ws-tools
+for_window [app_id="WebCord"] move container to workspace $ws-tools-misc
+for_window [class="WebCord"] move container to workspace $ws-tools-misc
+for_window [app_id="vesktop"] move container to workspace $ws-tools-misc
+for_window [class="vesktop"] move container to workspace $ws-tools-misc
 
 # Steam
-for_window [title="^(?!.*Friends List.*$)" class="^steam$"] move container to workspace $ws-tools
+for_window [title="^(?!.*Friends List.*$)" class="^steam$"] move container to workspace $ws-tools-misc
 for_window [title="^(?!.*Friends List.*$)" class="^steam$"] layout tabbed
 for_window [title="^(?!.*Friends List.*$)" class="^steam$"] floating disable
 
 # Prism Launcher
-for_window [app_id="org.prismlauncher.PrismLauncher"] move container to workspace $ws-tools
+for_window [app_id="org.prismlauncher.PrismLauncher"] move container to workspace $ws-tools-misc
 for_window [app_id="org.prismlauncher.PrismLauncher"] layout tabbed
 
 # Genymotion
-for_window [class="^Genymotion$"] move container to workspace $ws-tools
+for_window [class="^Genymotion$"] move container to workspace $ws-tools-misc
 for_window [class="^Genymotion$"] layout tabbed
 
 # Lutris
-for_window [app_id="lutris"] move container to workspace $ws-tools
+for_window [app_id="lutris"] move container to workspace $ws-tools-misc
 for_window [app_id="lutris"] layout tabbed
 for_window [app_id="lutris"] floating disable
 
 # Battle.net
-for_window [title="^(?!.*Friends.*$)" class="battle.net.exe"] move container to workspace $ws-tools
+for_window [title="^(?!.*Friends.*$)" class="battle.net.exe"] move container to workspace $ws-tools-misc
 for_window [title="^(?!.*Friends.*$)" class="battle.net.exe"] layout tabbed
 
 # Remmina
-for_window [title="Remmina Remote Desktop Client" app_id="org.remmina.Remmina"] move container to workspace $ws-tools
+for_window [title="Remmina Remote Desktop Client" app_id="org.remmina.Remmina"] move container to workspace $ws-tools-misc
 for_window [title="Remmina Remote Desktop Client" app_id="org.remmina.Remmina"] layout tabbed
 
 # Honkers Railway Launcher
-for_window [title="The Honkers Railway Launcher" app_id="moe.launcher.the-honkers-railway-launcher"] move container to workspace $ws-tools
+for_window [title="The Honkers Railway Launcher" app_id="moe.launcher.the-honkers-railway-launcher"] move container to workspace $ws-tools-misc
 for_window [title="The Honkers Railway Launcher" app_id="moe.launcher.the-honkers-railway-launcher"] layout tabbed
 
 # Anime Game Launcher
-for_window [title="An Anime Game Launcher" app_id="moe.launcher.an-anime-game-launcher"] move container to workspace $ws-tools
+for_window [title="An Anime Game Launcher" app_id="moe.launcher.an-anime-game-launcher"] move container to workspace $ws-tools-misc
 for_window [title="An Anime Game Launcher" app_id="moe.launcher.an-anime-game-launcher"] layout tabbed
 
 # Itch.io
-for_window [class="itch"] move container to workspace $ws-tools
+for_window [class="itch"] move container to workspace $ws-tools-misc
 for_window [class="itch"] layout tabbed
