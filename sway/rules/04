@@ -1,5 +1,9 @@
-set $ws_browser 4
+set $ws_games_arknights 4
 
-# Firefox
-for_window [class="firefox"] move container to workspace $ws_browser
-for_window [app_id="firefox"] move container to workspace $ws_browser
+# Arknights (Waydroid)
+for_window [class="waydroid"] move container to workspace $ws_games_arknights
+for_window [class="waydroid"] fullscreen enable
+
+# Waydroid
+for_window [class="Waydroid"] move container to workspace $ws_games_arknights
+for_window [class="Waydroid"] fullscreen enable
