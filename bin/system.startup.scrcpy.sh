@@ -7,7 +7,7 @@ TEMPFILE=/tmp/z.scrcpy.${SERVERFILE}.${GAMEFILE}
 DE=${XDG_CURRENT_DESKTOP}
 
 TITLE="\"${GAME} - ${SERIAL} - ${SERVER}\""
-SCRCPYVARIABLES=$(set | awk -F "=" '{print $1","$2}' | grep "_SCRCPYARG.*" | awk -F "," '{print $2}')
+SCRCPYVARIABLES=$(set | grep "_SCRCPYARG" | sed -r 's|_SCRCPYARG_[A-Za-z]+=||g')
 
 # Stop previous sessions to reboot
 stop_sessions() {
