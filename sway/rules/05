@@ -1,32 +1,21 @@
-set $ws-game1 5
+set $ws_game_main 5
 
 # Genymotion Player
-for_window [title="^(?!Genymotion$)" class="Genymotion Player"] move container to workspace $ws-game1
+for_window [title="^(?!Genymotion$)" class="Genymotion Player"] move container to workspace $ws_game_main
 for_window [title="^(?!Genymotion$)" class="Genymotion Player"] layout tabbed
 
-# Waydroid (Epic Seven)
-for_window [app_id="Waydroid"] move container to workspace $ws-game1
-for_window [app_id="Waydroid"] layout tabbed
-for_window [app_id="waydroid.*"] move container to workspace $ws-game1
-for_window [app_id="waydroid.*"] layout tabbed
-
-# Lutris/Wine - Counter Side
-for_window [class="counterside.exe"] move container to workspace $ws-game1
-for_window [class="counterside.exe"] layout tabbed
-
-# Vysor
-for_window [title="^(?!.*Vysor.*$)" class="vysor"] move container to workspace $ws-game1
-for_window [title="^(?!.*Vysor.*$)" class="vysor"] layout tabbed
-for_window [title="^(?!.*Vysor.*$)" class="vysor"] floating disable
-
 # Scrcpy
-for_window [app_id="scrcpy"] move container to workspace $ws-game1
-for_window [app_id="scrcpy"] layout tabbed
-for_window [app_id="scrcpy"] floating disable
+for_window [class="scrcpy"] move container to workspace $ws_game_main
+for_window [class="scrcpy"] layout tabbed
 
-# Android Studio Emulator
-for_window [title="Android Emulator"] move container to workspace 2
-for_window [title="Emulator"] move container to workspace 2
-# $ws-game1
-#for_window [title="Android Emulator"] layout tabbed
-#for_window [title="Android Emulator"] floating disable
+# Chromium - Granblue
+for_window [class="vivaldi-stable"] move container to workspace $ws_game_main
+#for_window [class="vivaldi-stable"] layout tabbed
+
+# Steam - Counterside
+for_window [class="steam_app_1976440"] move container to workspace $ws_game_main
+#for_window [class="steam_app_1976440"] layout tabbed
+
+# Steam - Limbus
+for_window [class="steam_app_1973530"] move container to workspace $ws_game_main
+#for_window [class="steam_app_1973530"] layout tabbed
