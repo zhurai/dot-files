@@ -1,5 +1,9 @@
 set $ws_editor 2
 
+# Firefox - Not really intended to run browser on main PC long term
+for_window [class="firefox"] move container to workspace $ws_editor
+for_window [app_id="firefox"] move container to workspace $ws_editor
+
 # VS Code
 for_window [app_id="code*"] move container to workspace $ws_editor
 for_window [app_id="code*"] layout tabbed
@@ -11,7 +15,7 @@ for_window [app_id="sublime_text"] layout tabbed
 # Da Vinci Resolve
 for_window [class="resolve"] move container to workspace $ws_editor
 for_window [class="resolve"] layout tabbed
-for_window [title="Project Manager" class="resolve"] floating diable
+for_window [title="Project Manager" class="resolve"] floating disable
 
 # Krita
 for_window [class="krita"] move container to workspace $ws_editor
@@ -28,4 +32,4 @@ for_window [class="Gimp"] layout tabbed
 # Inkscape
 for_window [app_id="org.inkscape.Inkscape"] move container to workspace $ws_editor
 for_window [app_id="org.inkscape.Inkscape"] layout tabbed
-for_window [app_id="org.inkscape.Inkscape"] floating diable
+for_window [app_id="org.inkscape.Inkscape"] floating disable
