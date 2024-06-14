@@ -2,6 +2,7 @@
 
 TEMPFILE=/tmp/z.genymotion.${GAMEFILE}
 DE=${XDG_CURRENT_DESKTOP}
+UUID=$(gmtool admin list | grep ${GENYMOTIONNAME} | awk -F"|" '{print $3}' | xargs)
 
 # Stop previous sessions to reboot
 stop_sessions() {
