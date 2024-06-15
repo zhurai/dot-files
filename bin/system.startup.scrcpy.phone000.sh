@@ -8,7 +8,7 @@ _SCRCPYARG_BITRATE="--video-bit-rate=$BITRATE"
 _SCRCPYARG_AWAKE="--stay-awake"
 _SCRCPYARG_SCREENOFF="--turn-screen-off"
 _SCRCPYARG_LEGACYPASTE="--legacy-paste"
-_SCRCPYARG_POWEROFFONCLOSE="--power-off-on-close"
+#_SCRCPYARG_POWEROFFONCLOSE="--power-off-on-close"
 
 . ~/.bin/system.startup.scrcpy.sh
 
