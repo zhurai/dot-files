@@ -12,8 +12,8 @@ if [[ "$CLASS" == *"Waydroid"* || "$CLASS" == *"waydroid"* ]] then
 # Genymotion
 elif [[ "$CLASS" == *"Genymotion Player"* ]] then
   
-  GAMEFILE=$(swaymsg -t get_tree | jq --raw-output '.. | (.nodes? // empty)[] | select(.focused==true).name' | awk -F" - " '{print $1}' | tr '[:upper:]' '[:lower:]')"
-  CONFIG="/tmp/z.genymotion.${GAMEFILE}
+  GAMEFILE=$(swaymsg -t get_tree | jq --raw-output '.. | (.nodes? // empty)[] | select(.focused==true).name' | awk -F" - " '{print $1}' | tr '[:upper:]' '[:lower:]')
+  CONFIG="/tmp/z.genymotion.${GAMEFILE}"
   ADB=$(sed -n '1p' ${CONFIG})
   GAME=$(sed -n '2p' ${CONFIG})
   

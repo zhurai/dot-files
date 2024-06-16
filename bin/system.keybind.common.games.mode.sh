@@ -43,6 +43,5 @@ GAME_MODE_ADJUST() {
     fi
   
   done
-
 }
 
