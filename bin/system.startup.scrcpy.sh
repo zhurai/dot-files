@@ -6,7 +6,7 @@ SERVERFILE=$(echo ${SERVER} | tr -d " \t\n\r" | tr '[:upper:]' '[:lower:]')
 TEMPFILE=/tmp/z.scrcpy.${SERVERFILE}.${GAMEFILE}
 DE=${XDG_CURRENT_DESKTOP}
 
-TITLE="\"${GAME} - ${SERIAL} - ${SERVER}\""
+TITLE="${GAME} - ${SERIAL} - ${SERVER}"
 SCRCPYVARIABLES=$(set | grep "_SCRCPYARG" | sed -r 's|_SCRCPYARG_[A-Za-z]+=||g')
 
 # Stop previous sessions to reboot
@@ -58,7 +58,7 @@ main() {
   sleep 5
 
   start_sessions 
-  sleep 30
+  sleep 5
 
   populate_tempfile
   sleep 1
