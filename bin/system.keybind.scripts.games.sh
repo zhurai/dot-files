@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. ~/.bin/system.keybind.common.sh
+. ~/.bin/system.keybind.scripts.sh
 
 # Waydroid
 if [[ "$CLASS" == *"Waydroid"* || "$CLASS" == *"waydroid"* ]] then
@@ -8,6 +8,7 @@ if [[ "$CLASS" == *"Waydroid"* || "$CLASS" == *"waydroid"* ]] then
   CONFIG="/tmp/z.waydroid"
   ADB=$(sed -n '1p' ${CONFIG})
   GAME=$(sed -n '2p' ${CONFIG})
+  CLASS_SUBTYPE="Android"
   
 # Genymotion
 elif [[ "$CLASS" == *"Genymotion Player"* ]] then
@@ -16,6 +17,7 @@ elif [[ "$CLASS" == *"Genymotion Player"* ]] then
   CONFIG="/tmp/z.genymotion.${GAMEFILE}"
   ADB=$(sed -n '1p' ${CONFIG})
   GAME=$(sed -n '2p' ${CONFIG})
+  CLASS_SUBTYPE="Android"
   
 # Scrcpy
 elif [[ "$CLASS" == *"scrcpy"* ]] then
@@ -25,6 +27,7 @@ elif [[ "$CLASS" == *"scrcpy"* ]] then
   CONFIG="/tmp/z.scrcpy.${SERVER}.${GAMEFILE}"
   ADB=$(sed -n '1p' ${CONFIG})
   GAME=$(sed -n '2p' ${CONFIG})
+  CLASS_SUBTYPE="Android"
 
 # Other
 else
