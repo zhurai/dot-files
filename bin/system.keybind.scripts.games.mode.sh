@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. ~/.bin/system.keybind.common.games.sh
+. ~/.bin/system.keybind.scripts.games.sh
 
 if [[ "$GAME" == *"Arknights"* ]] then
   
@@ -13,7 +13,7 @@ if [[ "$GAME" == *"Arknights"* ]] then
     
   else
     
-    . ~/.bin/system.keybind.common.games.mode._arknights.sh
+    . ~/.bin/system.keybind.common.arknights.sh
 
   fi
 
