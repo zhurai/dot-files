@@ -25,9 +25,9 @@ GAME_MODE_ADJUST() {
   
   for index in "${!PROFILE_LIST[@]}"; do
   
-    if [[ "${PROFILE_LIST[$index]}" == "$PROFILE" ]] ; then
+    if [[ "${PROFILE_LIST[$index]}" == "$PROFILE" ]] then
       
-      if [[ "$index" == "$((${#PROFILE_LIST[@]}-1))" ]] ; then
+      if [[ "$index" == "$((${#PROFILE_LIST[@]}-1))" ]] then
         
         PROFILE="${PROFILE_LIST[0]}"
 
