@@ -2,6 +2,7 @@ set $ws-tools-misc 10
 
 # Pavucontrol (Volume Control)
 for_window [app_id="pavucontrol"] move container to workspace $ws-tools-misc
+for_window [app_id="pavucontrol"] layout tabbed 
 
 # Discord
 for_window [app_id="WebCord"] move container to workspace $ws-tools-misc
@@ -45,4 +46,8 @@ for_window [title="An Anime Game Launcher" app_id="moe.launcher.an-anime-game-la
 
 # Itch.io
 for_window [class="itch"] move container to workspace $ws-tools-misc
+for_window [class="itch"] layout tabbed
+
+# Open Broadcaster Software
+for_window [app_id="com.obsproject.Studio"] move container to workspace $ws-tools-misc
 for_window [class="itch"] layout tabbed

@@ -1,8 +1,42 @@
 set $ws-terminal 1
+set $ws-editor 1
 
 for_window [app_id="Alacritty"] move container to workspace $ws-terminal
-#for_window [app_id="Alacritty"] layout tabbed
+for_window [app_id="Alacritty"] layout tabbed
 
 for_window [app_id="kitty"] move container to workspace $ws-terminal
-#for_window [app_id="kitty"] layout tabbed
+for_window [app_id="kitty"] layout tabbed
 
+# Firefox - Not really intended to run browser on main PC long term
+for_window [class="firefox"] move container to workspace $ws-editor
+for_window [app_id="firefox"] move container to workspace $ws-editor
+
+# VS Code
+for_window [app_id="code*"] move container to workspace $ws-editor
+for_window [app_id="code*"] layout tabbed
+
+# Sublime Editor
+for_window [app_id="sublime_text"] move container to workspace $ws-editor
+for_window [app_id="sublime_text"] layout tabbed
+
+# Da Vinci Resolve
+for_window [class="resolve"] move container to workspace $ws-editor
+for_window [class="resolve"] layout tabbed
+for_window [title="Project Manager" class="resolve"] floating disable
+
+# Krita
+for_window [class="krita"] move container to workspace $ws-editor
+for_window [class="krita"] layout tabbed
+
+# Blender
+for_window [app_id="blender"] move container to workspace $ws-editor
+for_window [app_id="blender"] layout tabbed
+
+# GIMP
+for_window [class="Gimp"] move container to workspace $ws-editor
+for_window [class="Gimp"] layout tabbed
+
+# Inkscape
+for_window [app_id="org.inkscape.Inkscape"] move container to workspace $ws-editor
+for_window [app_id="org.inkscape.Inkscape"] layout tabbed
+for_window [app_id="org.inkscape.Inkscape"] floating disable

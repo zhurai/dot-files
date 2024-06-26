@@ -1,5 +1,5 @@
-set $ws-games-mtgo 6
+set $ws-games-mtga 6
 
-# MTGO
-for_window [class="mtgo.exe"] move container to workspace $ws-games-mtgo
-for_window [class="mtgo.exe"] layout stacking
+# MTGA
+for_window [class="steam_app_2141910"] move container to workspace $ws-games-mtga
+for_window [class="steam_app_2141910"] fullscreen enable

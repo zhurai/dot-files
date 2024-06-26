@@ -1,35 +1,56 @@
-set $ws-editor 2
+set $ws-games-general 2
 
-# Firefox - Not really intended to run browser on main PC long term
-for_window [class="firefox"] move container to workspace $ws-editor
-for_window [app_id="firefox"] move container to workspace $ws-editor
+# Mahjong Soul
+for_window [title="MahjongSoul - Chromium" class="chromium"] move container to workspace $ws-games-general
 
-# VS Code
-for_window [app_id="code*"] move container to workspace $ws-editor
-for_window [app_id="code*"] layout tabbed
+# Minecraft
+for_window [class="Minecraft"] move container to workspace $ws-games-general
+for_window [class="Minecraft"] fullscreen enable
 
-# Sublime Editor
-for_window [app_id="sublime_text"] move container to workspace $ws-editor
-for_window [app_id="sublime_text"] layout tabbed
+# Osu!
+for_window [class="osu!.exe"] move container to workspace $ws-games-general
+for_window [class="osu!.exe"] layout stacking
+for_window [class="osu!.exe"] fullscreen enable
+for_window [title="osu!" class="dotnet"] move container to workspace $ws-games-general
+for_window [title="osu!" class="dotnet"] layout stacking
+for_window [title="osu!" class="dotnet"] fullscreen enable
 
-# Da Vinci Resolve
-for_window [class="resolve"] move container to workspace $ws-editor
-for_window [class="resolve"] layout tabbed
-for_window [title="Project Manager" class="resolve"] floating disable
+# Lutris Battle.net - StarCraft 2
+for_window [class="sc2_x64.exe"] move container to workspace $ws-games-general
+for_window [class="sc2_x64.exe"] layout stacking
+for_window [class="sc2_x64.exe"] fullscreen enable
 
-# Krita
-for_window [class="krita"] move container to workspace $ws-editor
-for_window [class="krita"] layout tabbed
+# Lutris Battle.net - StarCraft BW
+for_window [class="starcraft.exe"] move container to workspace $ws-games-general
+for_window [class="starcraft.exe"] layout stacking
+for_window [class="starcraft.exe"] fullscreen enable
 
-# Blender
-for_window [app_id="blender"] move container to workspace $ws-editor
-for_window [app_id="blender"] layout tabbed
+# Lutris - Guild Wars
+for_window [class="gw.exe"] move container to workspace $ws-games-general
+for_window [class="gw.exe"] layout stacking
+for_window [class="gw.exe"] fullscreen enable
 
-# GIMP
-for_window [class="Gimp"] move container to workspace $ws-editor
-for_window [class="Gimp"] layout tabbed
+# Lutris - Guild Wars 2
+for_window [class="gw2-64.exe"] move container to workspace $ws-games-general
+for_window [class="gw2-64.exe"] layout stacking
+for_window [class="gw2-64.exe"] fullscreen enable
 
-# Inkscape
-for_window [app_id="org.inkscape.Inkscape"] move container to workspace $ws-editor
-for_window [app_id="org.inkscape.Inkscape"] layout tabbed
-for_window [app_id="org.inkscape.Inkscape"] floating disable
+# Lutris - HRL - Honkai Star Rail
+for_window [instance="starrail.exe"] move container to workspace $ws-games-general
+for_window [instance="starrail.exe"] layout stacking
+for_window [instance="starrail.exe"] fullscreen enable
+
+# Lutris - AGL - Genshin Impact
+for_window [instance="genshinimpact.exe"] move container to workspace $ws-games-general
+for_window [instance="genshinimpact.exe"] layout stacking
+for_window [instance="genshinimpact.exe"] fullscreen enable
+
+# All Steam Applications / Games
+for_window [class="(steam_app_).*"] move container to workspace $ws-games-general
+for_window [class="(steam_app_).*"] layout stacking
+for_window [class="(steam_app_).*"] fullscreen enable
+
+# Steam - HoloCure Overrides
+for_window [title="HoloCure" class="(steam_app_2420510)"] floating disable
+for_window [title="HoloCure" class="(steam_app_2420510)"] resize set height 100
+for_window [title="HoloCure" class="(steam_app_2420510)"] resize set width 100

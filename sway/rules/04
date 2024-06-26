@@ -1,9 +1,9 @@
 set $ws-games-arknights 4
 
 # Arknights (Waydroid)
-for_window [class="waydroid"] move container to workspace $ws-games-arknights
-for_window [class="waydroid"] fullscreen enable
+for_window [app_id="waydroid"] move container to workspace $ws-games-arknights
+for_window [app_id="waydroid"] fullscreen enable
 
 # Waydroid
-for_window [class="Waydroid"] move container to workspace $ws-games-arknights
-for_window [class="Waydroid"] fullscreen enable
+for_window [app_id="Waydroid"] move container to workspace $ws-games-arknights
+for_window [app_id="Waydroid"] fullscreen enable

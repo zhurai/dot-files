@@ -1,21 +1,5 @@
-set $ws-games-main 5
+set $ws-games-mtgo 5
 
-# Genymotion Player
-for_window [title="^(?!Genymotion$)" class="Genymotion Player"] move container to workspace $ws-games-main
-for_window [title="^(?!Genymotion$)" class="Genymotion Player"] layout tabbed
-
-# Scrcpy
-for_window [class="scrcpy"] move container to workspace $ws-games-main
-for_window [class="scrcpy"] layout tabbed
-
-# Chromium - Granblue
-for_window [class="vivaldi-stable"] move container to workspace $ws-games-main
-#for_window [class="vivaldi-stable"] layout tabbed
-
-# Steam - Counterside
-for_window [class="steam_app_1976440"] move container to workspace $ws-games-main
-#for_window [class="steam_app_1976440"] layout tabbed
-
-# Steam - Limbus
-for_window [class="steam_app_1973530"] move container to workspace $ws-games-main
-#for_window [class="steam_app_1973530"] layout tabbed
+# MTGO
+for_window [class="mtgo.exe"] move container to workspace $ws-games-mtgo
+for_window [class="mtgo.exe"] layout tabbed

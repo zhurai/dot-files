@@ -1,1 +1,5 @@
-# ?
+set $ws-games-ygodl 8
+
+# Duel Links
+for_window [class="steam_app_601510"] move container to workspace $ws-games-ygodl
+for_window [class="steam_app_601510"] fullscreen enable
