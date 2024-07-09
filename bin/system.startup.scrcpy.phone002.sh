@@ -3,7 +3,6 @@
 SERVER="Phone002"
 SERIAL="3446573236453498"
 BITRATE="25M"
-_SCRCPYARG_MODKEY="--shortcut-mod=lctrl+lalt"
 _SCRCPYARG_BITRATE="--video-bit-rate=$BITRATE"
 _SCRCPYARG_AWAKE="--stay-awake"
 _SCRCPYARG_SCREENOFF="--turn-screen-off"

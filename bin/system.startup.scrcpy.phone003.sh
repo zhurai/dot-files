@@ -1,7 +1,7 @@
 #!/bin/bash
 
-SERVER="Phone000"
-SERIAL="47f3c1bf"
+SERVER="Phone003"
+SERIAL="44241JEKB06543"
 BITRATE="25M"
 _SCRCPYARG_BITRATE="--video-bit-rate=$BITRATE"
 _SCRCPYARG_AWAKE="--stay-awake"
