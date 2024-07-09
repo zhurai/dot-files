@@ -14,3 +14,5 @@ waydroid init -fs GAPPS
 systemctl start waydroid-container.service
 cd /opt/waydroid-script/
 waydroid-extras -a 11 install libndk
+waydroid-extras -a 11 install libndk
+waydroid-extras install widevine
