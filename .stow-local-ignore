@@ -1,0 +1,9 @@
+# git
+\.git
+\.gitignore
+
+# documentation files 
+^/README.*
+^/LICENSE.*
+^/COPYING
+
