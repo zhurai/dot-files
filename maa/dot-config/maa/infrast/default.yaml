@@ -1,0 +1,189 @@
+title: Default Setup
+description: 153 12/6/6 2024-11
+author: zhurai
+
+plans:
+  - name: Loadout 1 (AB) (01-13)
+    Fiammetta: { enable: true, target: 但书, order: pre }
+    drones: { enable: true, room: manufacture, index: 3, order: pre }
+    rooms:
+      control:
+        # Viviana, Flametail, Eunectes, Ling, Saileach
+        - operators: [薇薇安娜, 焰尾, 森蚺, 令, 琴柳]
+      trading:
+        - product: LMD
+          # Archetto, Ebenholz, Proviso
+          operators: [空弦, 黑键, 但书]
+      manufacture:
+        - product: Pure Gold
+          # Aroma, Gravel, Bryophyta
+          operators: [阿罗玛, 砾, 苍苔]
+        - product: Battle Record
+          # Weedy, Passenger, Windflit 
+          operators: [温蒂, 异客, 掠风]
+        - product: Battle Record
+          # Conviction, Waai Fu, Minimalist
+          operators: [断罪者, 槐琥, 至简]
+        - product: Battle Record
+          # Silence2, Dorothy, Rosmontis -> [ @Lapp2 ] Crownslayer, Marcille, Rosmontis 
+          operators: [淬羽赫默, 多萝西, 迷迭香]
+          #operators: [弑君者, 玛露西尔, 迷迭香]
+        - product: Battle Record
+          # Wildmane, Fartooth, Ashlock
+          operators: [野鬃, 远牙, 灰毫]
+      power:
+        # Greyy2, Lancet, GoldenGlow,
+        - operators: [承曦格雷伊]
+        - operators: [Lancet-2]
+        - operators: [澄闪]
+      hire:
+        # Whisperain
+        - operators: [絮雨]
+      meeting:
+        # Enforcer, Caper
+        - operators: [见行者, 跃跃]
+          autofill: true
+      dormitory:
+        # Virtuosa, Fiammetta
+        - operators: [塑心, 菲亚梅塔]
+          autofill: true
+        # Iris
+        - operators: [爱丽丝]
+          autofill: true
+        # Czerny
+        - operators: [车尔尼]
+          autofill: true
+        # -> Chilchuck
+        - operators: []
+        #- operators: [齐尔查克]
+          autofill: true
+
+  - name: Loadout 2 (AC) (13-19)
+    Fiammetta: { enable: true, target: 但书, order: pre }
+    drones: { enable: true, room: manufacture, index: 3, order: pre }
+    rooms:
+      control:
+        # Saileach, Dusk, Kal, Eunectes, Jessica2 -> [ @Upli ] Saileach, Dusk, Kal, Eunectes, Gladiia
+        - operators: [琴柳, 夕, 凯尔希, 森蚺, 涤火杰西卡] 
+        #- operators: [琴柳, 夕, 凯尔希, 森蚺, 歌蕾蒂娅] 
+      trading:
+        - product: LMD
+          # Archetto, Ebenholz, Proviso
+          operators: [空弦, 黑键, 但书]
+          sort: true
+      manufacture:
+        - product: Pure Gold
+          # Haze, Spot, Almond -> [ @Upli ] Ulpi, Skadi, Almond 
+          operators: [夜烟, 斑点, 杏仁]
+          #operators: [乌尔比安, 斯卡蒂, 杏仁]
+        - product: Battle Record
+          # Vermeil, Scene, Pallas
+          operators: [红云, 稀音, 帕拉斯]
+        - product: Battle Record
+          # Weedy, Passenger, Windflit 
+          operators: [温蒂, 异客, 掠风]
+        - product: Battle Record
+          # Silence2, Dorothy, Rosmontis -> [@Lapp2] Crownslayer, Marcille, Rosmontis 
+          operators: [淬羽赫默, 多萝西, 迷迭香]
+          #operators: [弑君者, 玛露西尔, 迷迭香]
+        - product: Battle Record
+          # Mizuki, Vanilla, Jessica1 -> [ @Upli ] FEater, Specter1, Andreana
+          operators: [水月, 香草, 杰西卡]
+          #operators: [食铁兽, 幽灵鲨, 安哲拉]
+      power:
+        # Greyy2, Lancet, GoldenGlow,
+        - operators: [承曦格雷伊]
+        - operators: [Lancet-2]
+        - operators: [澄闪]
+      hire:
+        # Whisperain
+        - operators: [絮雨]
+      meeting:
+        # Enforcer, Caper
+        - operators: [见行者, 跃跃]
+          autofill: true
+      dormitory:
+        # Virtuosa, Fiammetta
+        - operators: [塑心, 菲亚梅塔]
+          autofill: true
+        # Iris
+        - operators: [爱丽丝]
+          autofill: true
+        # Czerny
+        - operators: [车尔尼]
+          autofill: true
+        # -> Chilchuck
+        - operators: []
+        #- operators: [齐尔查克]
+          autofill: true
+
+  - name: Loadout 3 (CB) (19-01)
+    Fiammetta: { enable: true, target: 但书, order: pre }
+    drones: { enable: true, room: manufacture, index: 3, order: pre }
+    rooms:
+      control:
+        # Kal, Jessica2, Delphine, Viviana, Flametail
+        - operators: [凯尔希, 涤火杰西卡, 戴菲恩, 薇薇安娜, 焰尾]
+      trading:
+        - product: LMD
+          # Siege, Morgan, Proviso
+          operators: [推进之王, 摩根, 但书]
+          sort: true
+      manufacture:
+        - product: Pure Gold
+          # Aroma, Gravel, Bryophyta
+          operators: [阿罗玛, 砾, 苍苔]
+        - product: Battle Record
+          # Vermeil, Scene, Pallas
+          operators: [红云, 稀音, 帕拉斯]
+        - product: Battle Record
+          # Conviction, Waai Fu, Minimalist
+          operators: [断罪者, 槐琥, 至简]
+        - product: Battle Record
+          # Mizuki, Vanilla, Jessica1
+          operators: [水月, 香草, 杰西卡]
+        - product: Battle Record
+          # Wild Mane, Fartooth, Ashlock
+          operators: [野鬃, 远牙, 灰毫]
+      power:
+        # Greyy1, Liskarm, Lava2
+        - operators: [格雷伊]
+        - operators: [雷蛇]
+        - operators: [炎狱炎熔]
+      hire:
+        # Penance
+        - operators: [斥罪]
+      meeting:
+        # Ines, Chen1
+        - operators: [伊内丝, 红]
+      dormitory:
+        # Fiammetta
+        - operators: [菲亚梅塔]
+          autofill: true
+        - operators: []
+          autofill: true
+        - operators: []
+          autofill: true
+        - operators: []
+          autofill: true
+
+  - name: Rotate
+    drones: { enable: true, room: manufacture, index: 2, order: pre }
+    rooms:
+      meeting:
+        - operators: []
+          autofill: true
+      dormitory:
+        # Virtuosa, Fiammetta
+        - operators: [塑心, 菲亚梅塔]
+          autofill: true
+        # Iris
+        - operators: [爱丽丝]
+          autofill: true
+        # Czerny
+        - operators: [车尔尼]
+          autofill: true
+        # -> Chilchuck
+        - operators: []
+        #- operators: [齐尔查克]
+          autofill: true

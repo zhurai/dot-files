@@ -1,0 +1,13 @@
+[[tasks]]
+type = "Recruit"
+
+[tasks.params]
+server = "EN"
+refresh = true
+times = 100
+expedite = true
+select = [4, 5]
+confirm = [3, 4, 5]
+skip_robot = false
+recruitment_time = { '3' = 460 }
+

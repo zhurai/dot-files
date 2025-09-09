@@ -1,0 +1,19 @@
+[connection]
+type = "ADB"
+adb_path = "adb"
+device = "192.168.240.112:5555"
+
+[resource]
+global_resource = "YoStarEN"
+platform_diff_resource = ""
+user_resource = true
+
+[static_options]
+cpu_ocr = true
+gpu_ocr = 0
+
+[instance_options]
+touch_mode = "MaaTouch"
+deployment_with_pause = false
+adb_lite_enabled = false
+kill_adb_on_exit = false

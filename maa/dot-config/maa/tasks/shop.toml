@@ -1,0 +1,8 @@
+[[tasks]]
+type = "Mall"
+[tasks.params]
+shopping = true
+credit_fight = false
+buy_first = ["Skill Summary - 2"]
+blacklist = ["Carbon Stick", "Carbon Brick", "Pure Gold", "Furniture Part", "LMD", "Expedited Plan"]
+

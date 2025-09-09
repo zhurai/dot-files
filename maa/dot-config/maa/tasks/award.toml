@@ -1,0 +1,9 @@
+[[tasks]]
+type = "Award"
+
+[tasks.params]
+award = true
+mail = true
+orundum = true
+specialaccess = true
+

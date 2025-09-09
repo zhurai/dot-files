@@ -1,0 +1,4 @@
+[[tasks]]
+type = "StartUp"
+params = { client_type = "YostarEN", start_game_enabled = true }
+

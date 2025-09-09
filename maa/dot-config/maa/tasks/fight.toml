@@ -1,0 +1,23 @@
+[[tasks]]
+type = "Fight"
+
+[tasks.params]
+expiring_medicine = 1000
+
+[[tasks.variants]]
+condition = { type = "Weekday", weekdays = ["Mon"] }
+params = { stage = "AP-5" }
+
+[[tasks.variants]]
+condition = { type = "Weekday", weekdays = ["Tue", "Thu", "Sat", "Sun"] }
+params = { stage = "CE-6" }
+
+[[tasks.variants]]
+condition = { type = "Weekday", weekdays = ["Wed"] }
+# condition = { type = "Weekday", weekdays = ["Wed", "Fri"] }
+params = { stage = "CA-5" }
+
+[[tasks.variants]]
+condition = { type = "Weekday", weekdays = ["Fri"] }
+params = { stage = "LS-6" }
+

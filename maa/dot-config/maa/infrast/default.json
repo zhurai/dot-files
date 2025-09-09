@@ -1,0 +1,449 @@
+{
+  "author": "zhurai",
+  "description": "153 12/6/6 2024-11",
+  "plans": [
+    {
+      "Fiammetta": {
+        "enable": true,
+        "order": "pre",
+        "target": "但书"
+      },
+      "drones": {
+        "enable": true,
+        "index": 3,
+        "order": "pre",
+        "room": "manufacture"
+      },
+      "name": "Loadout 1 (AB) (01-13)",
+      "rooms": {
+        "control": [
+          {
+            "operators": [
+              "薇薇安娜",
+              "焰尾",
+              "森蚺",
+              "令",
+              "琴柳"
+            ]
+          }
+        ],
+        "dormitory": [
+          {
+            "autofill": true,
+            "operators": [
+              "塑心"
+            ]
+          },
+          {
+            "autofill": true,
+            "operators": [
+              "爱丽丝"
+            ]
+          },
+          {
+            "autofill": true,
+            "operators": [
+              "车尔尼"
+            ]
+          },
+          {
+            "autofill": true,
+            "operators": []
+          }
+        ],
+        "hire": [
+          {
+            "operators": [
+              "絮雨"
+            ]
+          }
+        ],
+        "manufacture": [
+          {
+            "operators": [
+              "阿罗玛",
+              "砾",
+              "苍苔"
+            ],
+            "product": "Pure Gold"
+          },
+          {
+            "operators": [
+              "温蒂",
+              "异客",
+              "掠风"
+            ],
+            "product": "Battle Record"
+          },
+          {
+            "operators": [
+              "断罪者",
+              "槐琥",
+              "至简"
+            ],
+            "product": "Battle Record"
+          },
+          {
+            "operators": [
+              "淬羽赫默",
+              "多萝西",
+              "迷迭香"
+            ],
+            "product": "Battle Record"
+          },
+          {
+            "operators": [
+              "野鬃",
+              "远牙",
+              "灰毫"
+            ],
+            "product": "Battle Record"
+          }
+        ],
+        "meeting": [
+          {
+            "operators": [
+              "见行者",
+              "跃跃"
+            ]
+          }
+        ],
+        "power": [
+          {
+            "operators": [
+              "承曦格雷伊"
+            ]
+          },
+          {
+            "operators": [
+              "Lancet-2"
+            ]
+          },
+          {
+            "operators": [
+              "澄闪"
+            ]
+          }
+        ],
+        "trading": [
+          {
+            "operators": [
+              "空弦",
+              "黑键",
+              "但书"
+            ],
+            "product": "LMD"
+          }
+        ]
+      }
+    },
+    {
+      "Fiammetta": {
+        "enable": true,
+        "order": "pre",
+        "target": "但书"
+      },
+      "drones": {
+        "enable": true,
+        "index": 3,
+        "order": "pre",
+        "room": "manufacture"
+      },
+      "name": "Loadout 2 (AC) (13-19)",
+      "rooms": {
+        "control": [
+          {
+            "operators": [
+              "琴柳",
+              "夕",
+              "凯尔希",
+              "森蚺",
+              "涤火杰西卡"
+            ]
+          }
+        ],
+        "dormitory": [
+          {
+            "autofill": true,
+            "operators": [
+              "塑心"
+            ]
+          },
+          {
+            "autofill": true,
+            "operators": [
+              "爱丽丝"
+            ]
+          },
+          {
+            "autofill": true,
+            "operators": [
+              "车尔尼"
+            ]
+          },
+          {
+            "autofill": true,
+            "operators": []
+          }
+        ],
+        "hire": [
+          {
+            "operators": [
+              "絮雨"
+            ]
+          }
+        ],
+        "manufacture": [
+          {
+            "operators": [
+              "夜烟",
+              "斑点",
+              "杏仁"
+            ],
+            "product": "Pure Gold"
+          },
+          {
+            "operators": [
+              "红云",
+              "稀音",
+              "帕拉斯"
+            ],
+            "product": "Battle Record"
+          },
+          {
+            "operators": [
+              "温蒂",
+              "异客",
+              "掠风"
+            ],
+            "product": "Battle Record"
+          },
+          {
+            "operators": [
+              "淬羽赫默",
+              "多萝西",
+              "迷迭香"
+            ],
+            "product": "Battle Record"
+          },
+          {
+            "operators": [
+              "水月",
+              "香草",
+              "杰西卡"
+            ],
+            "product": "Battle Record"
+          }
+        ],
+        "meeting": [
+          {
+            "operators": [
+              "见行者",
+              "跃跃"
+            ]
+          }
+        ],
+        "power": [
+          {
+            "operators": [
+              "承曦格雷伊"
+            ]
+          },
+          {
+            "operators": [
+              "Lancet-2"
+            ]
+          },
+          {
+            "operators": [
+              "澄闪"
+            ]
+          }
+        ],
+        "trading": [
+          {
+            "operators": [
+              "空弦",
+              "黑键",
+              "但书"
+            ],
+            "product": "LMD",
+            "sort": true
+          }
+        ]
+      }
+    },
+    {
+      "Fiammetta": {
+        "enable": true,
+        "order": "pre",
+        "target": "但书"
+      },
+      "drones": {
+        "enable": true,
+        "index": 3,
+        "order": "pre",
+        "room": "manufacture"
+      },
+      "name": "Loadout 3 (CB) (19-01)",
+      "rooms": {
+        "control": [
+          {
+            "operators": [
+              "凯尔希",
+              "涤火杰西卡",
+              "戴菲恩",
+              "薇薇安娜",
+              "焰尾"
+            ]
+          }
+        ],
+        "dormitory": [
+          {
+            "autofill": true,
+            "operators": []
+          },
+          {
+            "autofill": true,
+            "operators": []
+          },
+          {
+            "autofill": true,
+            "operators": []
+          },
+          {
+            "autofill": true,
+            "operators": []
+          }
+        ],
+        "hire": [
+          {
+            "operators": [
+              "斥罪"
+            ]
+          }
+        ],
+        "manufacture": [
+          {
+            "operators": [
+              "阿罗玛",
+              "砾",
+              "苍苔"
+            ],
+            "product": "Pure Gold"
+          },
+          {
+            "operators": [
+              "红云",
+              "稀音",
+              "帕拉斯"
+            ],
+            "product": "Battle Record"
+          },
+          {
+            "operators": [
+              "断罪者",
+              "槐琥",
+              "至简"
+            ],
+            "product": "Battle Record"
+          },
+          {
+            "operators": [
+              "水月",
+              "香草",
+              "杰西卡"
+            ],
+            "product": "Battle Record"
+          },
+          {
+            "operators": [
+              "野鬃",
+              "远牙",
+              "灰毫"
+            ],
+            "product": "Battle Record"
+          }
+        ],
+        "meeting": [
+          {
+            "operators": [
+              "伊内丝",
+              "红"
+            ]
+          }
+        ],
+        "power": [
+          {
+            "operators": [
+              "格雷伊"
+            ]
+          },
+          {
+            "operators": [
+              "雷蛇"
+            ]
+          },
+          {
+            "operators": [
+              "炎狱炎熔"
+            ]
+          }
+        ],
+        "trading": [
+          {
+            "operators": [
+              "推进之王",
+              "摩根",
+              "但书"
+            ],
+            "product": "LMD",
+            "sort": true
+          }
+        ]
+      }
+    },
+    {
+      "drones": {
+        "enable": true,
+        "index": 2,
+        "order": "pre",
+        "room": "manufacture"
+      },
+      "name": "Rotate",
+      "rooms": {
+        "dormitory": [
+          {
+            "autofill": true,
+            "operators": [
+              "塑心"
+            ]
+          },
+          {
+            "autofill": true,
+            "operators": [
+              "爱丽丝"
+            ]
+          },
+          {
+            "autofill": true,
+            "operators": [
+              "车尔尼"
+            ]
+          },
+          {
+            "autofill": true,
+            "operators": []
+          }
+        ],
+        "meeting": [
+          {
+            "autofill": true,
+            "operators": []
+          }
+        ]
+      }
+    }
+  ],
+  "title": "Default Setup"
+}
