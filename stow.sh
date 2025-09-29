@@ -7,3 +7,4 @@ stow --dotfiles -t ~ -S maa
 stow --dotfiles -t ~ -S hyprland
 stow --dotfiles -t ~ -S tmux
 stow --dotfiles -t ~ -S bin
+stow --dotfiles -t ~ -S dunst
