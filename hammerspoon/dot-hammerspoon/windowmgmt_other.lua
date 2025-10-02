@@ -1,10 +1,12 @@
 -- === SETTINGS ===
 local screenName = "ASUS"
 local terminalFrame = { x = 930, y = 0, w = 990, h = 588 }
+local slackFrame = { x = 850, y = 620, w = 694, h = 580 }
 local feishinFrame = { x = 850, y = 0, w = 938, h = 639 }
 
 local windowFrames = {
 	["WezTerm"] = terminalFrame,
+	["Slack"] = slackFrame,
 	["Feishin"] = feishinFrame,
 }
 
@@ -36,7 +38,7 @@ local function enforceFrame(win, frame)
 	end
 end
 
-local otherFilter = hs.window.filter.new(false):setAppFilter("Feishin"):setAppFilter("WezTerm")
+local otherFilter = hs.window.filter.new(false):setAppFilter("WezTerm"):setAppFilter("Slack")
 
 otherFilter:subscribe(hs.window.filter.windowCreated, function(win)
 	local app = win:application():name()
