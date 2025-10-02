@@ -8,4 +8,5 @@ require("chrome_activate")
 require("windowmgmt_vivaldi")
 require("windowmgmt_chrome")
 require("windowmgmt_firefox")
+require("windowmgmt_other")
 
