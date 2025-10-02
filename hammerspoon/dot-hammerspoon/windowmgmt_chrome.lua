@@ -1,16 +1,9 @@
 -- === SETTINGS ===
 local screenName = "ASUS"
-local discordFrame = { x = 920, y = 670, w = 675, h = 528 }
-local slackFrame = { x = 850, y = 670, w = 690, h = 528 }
--- local fbmessengerFrame = { x = 1333, y = 0, w = 377, h = 525 }
+local discordFrame = { x = 920, y = 620, w = 675, h = 580 }
 
 local windowFrames = {
 	["Discord"] = discordFrame,
-
-	["Slack"] = slackFrame,
-
-	--    ["Messenger"] = fbmessengerFrame,
-	--    ["family"] = fbmessengerFrame,
 }
 
 -- === HELPERS ===
