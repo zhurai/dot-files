@@ -2,7 +2,7 @@
 local slackKeyword = "Slack"
 local discordKeyword = "Discord"
 
-local slackFilter = hs.window.filter.new(false):setAppFilter("Google Chrome", { allowTitles = { slackKeyword } })
+local slackFilter = hs.window.filter.new(false):setAppFilter(slackKeyword)
 local discordFilter = hs.window.filter.new(false):setAppFilter("Google Chrome", { allowTitles = { discordKeyword } })
 
 local slackTimer = nil
