@@ -1,7 +1,7 @@
 -- === SETTINGS ===
 local screenName = "ASUS"
-local terminalFrame = { x = 584, y = 0, w = 974, h = 639 }
-local feishinFrame = { x = 584, y = 0, w = 938, h = 639 }
+local terminalFrame = { x = 945, y = 0, w = 974, h = 639 }
+local feishinFrame = { x = 850, y = 0, w = 938, h = 639 }
 
 local windowFrames = {
 	["WezTerm"] = terminalFrame,
