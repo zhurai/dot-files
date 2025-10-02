@@ -1,9 +1,11 @@
 -- === SETTINGS ===
 local screenName = "ASUS"
 local discordFrame = { x = 920, y = 620, w = 675, h = 580 }
+local musicFrame = { x = 850, y = 0, w = 939, h = 588 }
 
 local windowFrames = {
 	["Discord"] = discordFrame,
+	["Feishin"] = musicFrame,
 }
 
 -- === HELPERS ===
