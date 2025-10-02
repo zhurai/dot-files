@@ -1,6 +1,6 @@
 -- === SETTINGS ===
 local screenName = "ASUS"
-local gbfFrame = { x = 1566, y = 670, w = 500, h = 566 }
+local gbfFrame = { x = 1566, y = 620, w = 500, h = 650 }
 local otherFrame = { x = 50, y = 50, w = 700, h = 700 }
 local windowFrames = {
 	["Vivaldi"] = gbfFrame,
