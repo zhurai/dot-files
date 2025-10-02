@@ -4,6 +4,7 @@ require("log_last_window")
 
 require("chrome_forward")
 require("chrome_activate")
+require("terminal_activate")
 
 require("windowmgmt_vivaldi")
 require("windowmgmt_chrome")
