@@ -2,12 +2,11 @@
 local musicKeyword = "Feishin"
 local terminalKeyword = "WezTerm"
 
-local musicFilter = hs.window.filter.new(false):setAppFilter(musicKeyword)
+local musicFilter = hs.window.filter.new(false):setAppFilter("Google Chrome", { allowTitles = { musicKeyword } })
 local terminalFilter = hs.window.filter.new(false):setAppFilter(terminalKeyword)
 
 local musicTimer = nil
 
--- helper: activate first matching Discord window
 local function activateTerminal()
     local wins = terminalFilter:getWindows()
     if #wins > 0 then
