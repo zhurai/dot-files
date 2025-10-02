@@ -19,6 +19,7 @@ local function getChromeTabURLsAsync(callback)
                         if (!(url.includes("discord.com") ||
                               url.includes("slack.com")   ||
                               url.includes("messenger.com") ||
+                              url.includes("feishin.vercel.app") ||
                               url.includes("fluffychat.im"))) {
                             urls.push(url);
                         }
@@ -31,6 +32,7 @@ local function getChromeTabURLsAsync(callback)
                         if (!(url.includes("discord.com") ||
                               url.includes("slack.com")   ||
                               url.includes("messenger.com") ||
+                              url.includes("feishin.vercel.app") ||
                               url.includes("fluffychat.im"))) {
                             tab.close();
                         }
