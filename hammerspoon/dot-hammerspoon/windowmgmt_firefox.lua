@@ -36,7 +36,6 @@ local function enforceFrame(win, frame)
 	end
 end
 
--- Subscribe to Chrome windows and place based on title
 local firefoxFilter = hs.window.filter.new(false):setAppFilter("Firefox"):setAppFilter("Firefox Developer Edition")
 
 firefoxFilter:subscribe(hs.window.filter.windowCreated, function(win)
@@ -49,7 +48,7 @@ end)
 firefoxFilter:subscribe(hs.window.filter.windowFocused, function(win)
 	local app = win:application():name()
 	local frame = windowFrames[app]
-	hs.printf("App: %s | Title: %s", app, frame)
+
 	enforceFrame(win, frame)
 end)
 
