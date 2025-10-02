@@ -1,1 +1,3 @@
-alias nvim-remote-edit="/mnt/SSD1/Development/Personal/dot-files/scripts/dot-bin/nvim-remote-edit"
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export PATH="/opt/homebrew/bin:$PATH"
+
