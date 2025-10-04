@@ -7,7 +7,7 @@ require("chrome_forward")
 require("activate_discord")
 require("activate_terminal")
 
-require("windowmgmt_vivaldi")
+--require("windowmgmt_vivaldi")
 require("windowmgmt_chrome")
 require("windowmgmt_firefox")
 require("windowmgmt_other")
