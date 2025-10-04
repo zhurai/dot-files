@@ -1,7 +1,7 @@
 -- === SETTINGS ===
 local screenName = "ASUS"
 local terminalFrame = { x = 930, y = 0, w = 990, h = 588 }
-local slackFrame = { x = 850, y = 620, w = 694, h = 580 }
+local slackFrame = { x = 850, y = 620, w = 980, h = 580 }
 
 local windowFrames = {
 	["WezTerm"] = terminalFrame,
