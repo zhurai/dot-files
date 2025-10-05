@@ -1,6 +1,6 @@
 -- === SETTINGS ===
 local screenName = "Built"
-local firefoxMainFrame = { x = 0, y = 615, w = 848, h = 584 }
+local firefoxMainFrame = { x = 0, y = 584, w = 848, h = 584 }
 local firefoxReferenceFrame = { x = 0, y = 0, w = 848, h = 584 }
 
 local windowFrames = {

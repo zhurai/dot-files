@@ -1,6 +1,6 @@
 -- === SETTINGS ===
 local screenName = "Built"
-local discordFrame = { x = 920, y = 620, w = 1000, h = 580 }
+local discordFrame = { x = 920, y = 588, w = 1000, h = 580 }
 local musicFrame = { x = 850, y = 0, w = 939, h = 588 }
 
 local windowFrames = {
