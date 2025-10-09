@@ -1,20 +1,24 @@
--- === SETTINGS ===
-local screenName = "Built"
-local terminalFrame = { x = 930, y = 0, w = 990, h = 588 }
-local slackFrame = { x = 850, y = 588, w = 980, h = 580 }
-
+-- Settings
+local applications = { "WezTerm", "Slack", "Feishin", "Element" }
+local weztermFrame = { screen = "Built", x = 0, y = 0, w = 693, h = 560 }
+local musicFrame = { screen = "ASUS", x = 0, y = 409, w = 992, h = 640 }
+local slackFrame = { screen = "ASUS", x = 992, y = 0, w = 926, h = 525 }
+local matrixFrame = { screen = "ASUS", x = 992, y = 525, w = 924, h = 523 }
 local windowFrames = {
-	["WezTerm"] = terminalFrame,
-	["Slack"] = slackFrame,
+        ["WezTerm"] = weztermFrame,
+        ["Slack"] = slackFrame,
+        ["Feishin"] = musicFrame,
+        ["Element"] = matrixFrame,
 }
 
--- === HELPERS ===
-local function targetScreen()
-	return hs.screen.find(screenName) or hs.screen.allScreens()[2]
+
+-- Local Functions
+local function targetScreen(screenName)
+	return hs.screen.find(screenName)
 end
 
 local function absFrame(frame)
-	local s = targetScreen()
+	local s = targetScreen(frame.screen)
 	if not s then
 		return frame
 	end
@@ -26,6 +30,10 @@ local function enforceFrame(win, frame)
 	if not win or not win:isStandard() then
 		return
 	end
+        local screens = hs.screen.allScreens()
+        if #screens <= 1 then
+                return
+        end
 	local f = absFrame(frame)
 	for i = 0, 3 do
 		hs.timer.doAfter(0.2 * i, function()
@@ -36,25 +44,30 @@ local function enforceFrame(win, frame)
 	end
 end
 
-local otherFilter = hs.window.filter.new(false):setAppFilter("WezTerm"):setAppFilter("Slack")
+-- Event subscription
+local otherFilter = hs.window.filter.new(false)
+for _, app in ipairs(applications) do
+    otherFilter:setAppFilter(app)
+end
 
 otherFilter:subscribe(hs.window.filter.windowCreated, function(win)
-	local app = win:application():name()
-	local frame = windowFrames[app]
+        local app = win:application():name()
+        local frame = windowFrames[app]
 
-	enforceFrame(win, frame)
+        enforceFrame(win, frame)
 end)
 
 otherFilter:subscribe(hs.window.filter.windowFocused, function(win)
-	local app = win:application():name()
-	local frame = windowFrames[app]
+        local app = win:application():name()
+        local frame = windowFrames[app]
+        print(app)
 
-	enforceFrame(win, frame)
+        enforceFrame(win, frame)
 end)
 
 otherFilter:subscribe(hs.window.filter.windowMoved, function(win)
-	local app = win:application():name()
-	local frame = windowFrames[app]
+        local app = win:application():name()
+        local frame = windowFrames[app]
 
-	enforceFrame(win, frame)
+        enforceFrame(win, frame)
 end)
