@@ -17,10 +17,8 @@ local function getChromeTabURLsAsync(callback)
                     window.tabs().forEach(function(tab) {
                         var url = tab.url();
                         if (!(url.includes("discord.com") ||
-                              url.includes("slack.com")   ||
                               url.includes("messenger.com") ||
-                              url.includes("feishin.vercel.app") ||
-                              url.includes("fluffychat.im"))) {
+                              url.includes("twitch.tv/popout"))) {
                             urls.push(url);
                         }
                     });
@@ -30,10 +28,8 @@ local function getChromeTabURLsAsync(callback)
                     window.tabs().forEach(function(tab) {
                         var url = tab.url();
                         if (!(url.includes("discord.com") ||
-                              url.includes("slack.com")   ||
                               url.includes("messenger.com") ||
-                              url.includes("feishin.vercel.app") ||
-                              url.includes("fluffychat.im"))) {
+                              url.includes("twitch.tv/popout"))) {
                             tab.close();
                         }
                     });
