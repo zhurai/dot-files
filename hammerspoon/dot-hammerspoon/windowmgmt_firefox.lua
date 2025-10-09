@@ -1,20 +1,19 @@
--- === SETTINGS ===
-local screenName = "Built"
-local firefoxMainFrame = { x = 0, y = 584, w = 848, h = 584 }
-local firefoxReferenceFrame = { x = 0, y = 0, w = 848, h = 584 }
-
+-- Settings
+local firefoxMainFrame = { screen = "Built", x = 695, y = 584, w = 1020, h = 584 }
+local firefoxReferenceFrame = { screen = "Built", x = 695, y = 0, w = 1020, h = 584 }
 local windowFrames = {
-	["Firefox"] = firefoxMainFrame,
-	["Firefox Developer Edition"] = firefoxReferenceFrame,
+        ["Firefox"] = firefoxMainFrame,
+        ["Firefox Developer Edition"] = firefoxReferenceFrame,
 }
 
--- === HELPERS ===
-local function targetScreen()
-	return hs.screen.find(screenName) or hs.screen.allScreens()[2]
+
+-- Local Functions
+local function targetScreen(screenName)
+	return hs.screen.find(screenName)
 end
 
 local function absFrame(frame)
-	local s = targetScreen()
+	local s = targetScreen(frame.screen)
 	if not s then
 		return frame
 	end
@@ -26,6 +25,10 @@ local function enforceFrame(win, frame)
 	if not win or not win:isStandard() then
 		return
 	end
+        local screens = hs.screen.allScreens()
+        if #screens <= 1 then
+                return
+        end
 	local f = absFrame(frame)
 	for i = 0, 3 do
 		hs.timer.doAfter(0.2 * i, function()
@@ -36,25 +39,26 @@ local function enforceFrame(win, frame)
 	end
 end
 
+-- Event subscription
 local firefoxFilter = hs.window.filter.new(false):setAppFilter("Firefox"):setAppFilter("Firefox Developer Edition")
 
 firefoxFilter:subscribe(hs.window.filter.windowCreated, function(win)
-	local app = win:application():name()
-	local frame = windowFrames[app]
+        local app = win:application():name()
+        local frame = windowFrames[app]
 
-	enforceFrame(win, frame)
+        enforceFrame(win, frame)
 end)
 
 firefoxFilter:subscribe(hs.window.filter.windowFocused, function(win)
-	local app = win:application():name()
-	local frame = windowFrames[app]
+        local app = win:application():name()
+        local frame = windowFrames[app]
 
-	enforceFrame(win, frame)
+        enforceFrame(win, frame)
 end)
 
 firefoxFilter:subscribe(hs.window.filter.windowMoved, function(win)
-	local app = win:application():name()
-	local frame = windowFrames[app]
+        local app = win:application():name()
+        local frame = windowFrames[app]
 
-	enforceFrame(win, frame)
+        enforceFrame(win, frame)
 end)
