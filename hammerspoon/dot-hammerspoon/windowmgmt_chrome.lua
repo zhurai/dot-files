@@ -1,7 +1,7 @@
 -- Settings
 local windowType = "Google Chrome"
 local discordFrame = { screen = "Built", x = 0, y = 557, w = 695, h = 515 }
-local fbMessengerFrame = { screen = "ASUS", x = -65, y = 0, w = 541, h = 576 }
+local fbMessengerFrame = { screen = "ASUS", x = -65, y = 0, w = 541, h = 409 }
 local windowFrames = {
 	["Discord"] = discordFrame,
 	["Messenger"] = fbMessengerFrame,
@@ -26,7 +26,7 @@ local function enforceFrame(win, frame)
 		return
 	end
         local screens = hs.screen.allScreens()
-        if screens <= 1 then
+        if #screens <= 1 then
                 return
         end
 	local f = absFrame(frame)
