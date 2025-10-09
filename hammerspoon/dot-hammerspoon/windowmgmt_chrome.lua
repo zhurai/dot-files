@@ -1,8 +1,10 @@
 -- Settings
 local windowType = "Google Chrome"
 local discordFrame = { screen = "Built", x = 0, y = 557, w = 695, h = 515 }
+local fbMessengerFrame = { screen = "ASUS", x = -65, y = 0, w = 541, h = 576 }
 local windowFrames = {
 	["Discord"] = discordFrame,
+	["Messenger"] = fbMessengerFrame,
 }
 
 -- Local Functions
