@@ -1,20 +1,17 @@
--- === SETTINGS ===
-local screenName = "Built"
-local discordFrame = { x = 920, y = 588, w = 1000, h = 580 }
-local musicFrame = { x = 850, y = 0, w = 939, h = 588 }
-
+-- Settings
+local windowType = "Google Chrome"
+local discordFrame = { screen = "Built", x = 0, y = 557, w = 695, h = 515 }
 local windowFrames = {
 	["Discord"] = discordFrame,
-	["Feishin"] = musicFrame,
 }
 
--- === HELPERS ===
-local function targetScreen()
-	return hs.screen.find(screenName) or hs.screen.allScreens()[2]
+-- Local Functions
+local function targetScreen(screenName)
+	return hs.screen.find(screenName)
 end
 
 local function absFrame(frame)
-	local s = targetScreen()
+	local s = targetScreen(frame.screen)
 	if not s then
 		return frame
 	end
@@ -36,8 +33,8 @@ local function enforceFrame(win, frame)
 	end
 end
 
--- Subscribe to Chrome windows and place based on title
-local chromeFilter = hs.window.filter.new(false):setAppFilter("Google Chrome")
+-- Event subscription
+local chromeFilter = hs.window.filter.new(false):setAppFilter(windowType)
 
 chromeFilter:subscribe(hs.window.filter.windowCreated, function(win)
 	for titleKeyword, frame in pairs(windowFrames) do
