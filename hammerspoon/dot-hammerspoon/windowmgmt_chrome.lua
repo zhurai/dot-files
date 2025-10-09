@@ -1,5 +1,5 @@
 -- Settings
-local windowType = "Google Chrome"
+local applications = { "Google Chrome" }
 local discordFrame = { screen = "Built", x = 0, y = 557, w = 695, h = 515 }
 local fbMessengerFrame = { screen = "ASUS", x = -65, y = 0, w = 541, h = 409 }
 local windowFrames = {
@@ -40,7 +40,10 @@ local function enforceFrame(win, frame)
 end
 
 -- Event subscription
-local chromeFilter = hs.window.filter.new(false):setAppFilter(windowType)
+local chromeFilter = hs.window.filter.new(false)
+for _, app in ipairs(applications) do
+    chromeFilter:setAppFilter(app)
+end
 
 chromeFilter:subscribe(hs.window.filter.windowCreated, function(win)
 	for titleKeyword, frame in pairs(windowFrames) do

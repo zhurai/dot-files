@@ -1,4 +1,5 @@
 -- Settings
+local applications = { "Firefox", "Firefox Developer Edition" }
 local firefoxMainFrame = { screen = "Built", x = 695, y = 584, w = 1020, h = 584 }
 local firefoxReferenceFrame = { screen = "Built", x = 695, y = 0, w = 1020, h = 584 }
 local windowFrames = {
@@ -40,7 +41,10 @@ local function enforceFrame(win, frame)
 end
 
 -- Event subscription
-local firefoxFilter = hs.window.filter.new(false):setAppFilter("Firefox"):setAppFilter("Firefox Developer Edition")
+local firefoxFilter = hs.window.filter.new(false)
+for _, app in ipairs(applications) do
+    firefoxFilter:setAppFilter(app)
+end
 
 firefoxFilter:subscribe(hs.window.filter.windowCreated, function(win)
         local app = win:application():name()
