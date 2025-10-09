@@ -25,6 +25,10 @@ local function enforceFrame(win, frame)
 	if not win or not win:isStandard() then
 		return
 	end
+        local screens = hs.screen.allScreens()
+        if screens <= 1 then
+                return
+        end
 	local f = absFrame(frame)
 	for i = 0, 3 do
 		hs.timer.doAfter(0.2 * i, function()
