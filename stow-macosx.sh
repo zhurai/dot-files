@@ -5,4 +5,5 @@ stow --dotfiles -t ~ -S nvim
 stow --dotfiles -t ~ -S nvim-lazy
 stow --dotfiles -t ~ -S tmux
 stow --dotfiles -t ~ -S hammerspoon
+stow --dotfiles -t ~ -S wezterm
 
