@@ -1,1 +1,2 @@
-alias nvim-remote-edit="/mnt/SSD1/Development/Personal/dot-files/scripts/dot-bin/nvim-remote-edit"
+[[ -f ~/.profile ]] && . ~/.profile
+[[ -f ~/.bashrc ]] && . ~/.bashrc
