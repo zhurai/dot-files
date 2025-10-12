@@ -1,10 +1,12 @@
 -- Settings
-local applications = { "WezTerm", "Slack", "Feishin", "Element" }
-local weztermFrame = { screen = "Built", x = 0, y = 0, w = 693, h = 560 }
+local applications = { "WezTerm", "Slack", "Feishin", "Element", "Discord" }
+local discordFrame = { screen = "Built", x = 0, y = 0, w = 800, h = 500 }
+local weztermFrame = { screen = "Built", x = 800, y = 0, w = 910, h = 500 }
 local musicFrame = { screen = "ASUS", x = 0, y = 409, w = 992, h = 640 }
 local slackFrame = { screen = "ASUS", x = 992, y = 0, w = 930, h = 525 }
 local matrixFrame = { screen = "ASUS", x = 992, y = 525, w = 930, h = 523 }
 local windowFrames = {
+        ["Discord"] = discordFrame,
         ["WezTerm"] = weztermFrame,
         ["Slack"] = slackFrame,
         ["Feishin"] = musicFrame,
