@@ -1,16 +1,18 @@
 -- Settings
-local applications = { "WezTerm", "Slack", "Feishin", "Element", "Discord" }
+local applications = { "WezTerm", "Slack", "Feishin", "Element", "Discord", "Vivaldi" }
 local weztermFrame = { screen = "Built", x = 0, y = 0, w = 803, h = 1071 }
 local discordFrame = { screen = "ASUS", x = 565, y = 0, w = 800, h = 598 }
 local musicFrame = { screen = "ASUS", x = 1367, y = 0, w = 553, h = 640 }
 local slackFrame = { screen = "ASUS", x = 490, y = 0, w = 745, h = 597 }
 local matrixFrame = { screen = "ASUS", x = 0, y = 600, w = 954, h = 450 }
+local gbfVivaldiFrame = { screen = "ASUS", x = 1367, y = 640, w = 553, h = 452 }
 local windowFrames = {
 	["Discord"] = discordFrame,
 	["WezTerm"] = weztermFrame,
 	["Slack"] = slackFrame,
 	["Feishin"] = musicFrame,
 	["Element"] = matrixFrame,
+	["Vivaldi"] = gbfVivaldiFrame,
 }
 
 -- Local Functions
