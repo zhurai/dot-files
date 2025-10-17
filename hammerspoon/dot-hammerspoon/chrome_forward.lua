@@ -18,7 +18,8 @@ local function getChromeTabURLsAsync(callback)
                         var url = tab.url();
                         if (!(url.includes("discord.com") ||
                               url.includes("messenger.com") ||
-                              url.includes("twitch.tv/popout"))) {
+                              url.includes("twitch.tv/popout"))) ||
+                              url.includes("steamcommunity.com/chat"))) {
                             urls.push(url);
                         }
                     });
@@ -29,7 +30,8 @@ local function getChromeTabURLsAsync(callback)
                         var url = tab.url();
                         if (!(url.includes("discord.com") ||
                               url.includes("messenger.com") ||
-                              url.includes("twitch.tv/popout"))) {
+                              url.includes("twitch.tv/popout"))) ||
+                              url.includes("steamcommunity.com/chat"))) {
                             tab.close();
                         }
                     });
