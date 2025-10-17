@@ -1,8 +1,8 @@
 -- Settings
 local applications = { "Google Chrome" }
 local steamChatFrame = { screen = "ASUS", x = 0, y = 0, w = 492, h = 598 }
-local fbMessengerFrame = { screen = "ASUS", x = 1375, y = 642, w = 547, h = 408 }
-local twitchChatFrame = { screen = "ASUS", x = 955, y = 600, w = 418, h = 459 }
+local fbMessengerFrame = { screen = "ASUS", x = 687, y = 600, w = 678, h = 450 }
+local twitchChatFrame = { screen = "ASUS", x = 1367, y = 640, w = 280, h = 408 }
 local windowFrames = {
 	["Messenger"] = fbMessengerFrame,
 	["Twitch"] = twitchChatFrame,

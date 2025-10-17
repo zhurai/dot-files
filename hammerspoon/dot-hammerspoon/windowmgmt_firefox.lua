@@ -1,12 +1,11 @@
 -- Settings
 local applications = { "Firefox", "Firefox Developer Edition" }
-local firefoxMainFrame = { screen = "Built", x = 800, y = 500, w = 910, h = 570 }
-local firefoxReferenceFrame = { screen = "Built", x = 0, y = 500, w = 800, h = 570 }
+local firefoxMainFrame = { screen = "Built", x = 803, y = 500, w = 910, h = 570 }
+local firefoxReferenceFrame = { screen = "Built", x = 803, y = 0, w = 910, h = 499 }
 local windowFrames = {
-        ["Firefox"] = firefoxMainFrame,
-        ["Firefox Developer Edition"] = firefoxReferenceFrame,
+	["Firefox"] = firefoxMainFrame,
+	["Firefox Developer Edition"] = firefoxReferenceFrame,
 }
-
 
 -- Local Functions
 local function targetScreen(screenName)
@@ -26,10 +25,10 @@ local function enforceFrame(win, frame)
 	if not win or not win:isStandard() then
 		return
 	end
-        local screens = hs.screen.allScreens()
-        if #screens <= 1 then
-                return
-        end
+	local screens = hs.screen.allScreens()
+	if #screens <= 1 then
+		return
+	end
 	local f = absFrame(frame)
 	for i = 0, 3 do
 		hs.timer.doAfter(0.2 * i, function()
@@ -43,26 +42,26 @@ end
 -- Event subscription
 local firefoxFilter = hs.window.filter.new(false)
 for _, app in ipairs(applications) do
-    firefoxFilter:setAppFilter(app)
+	firefoxFilter:setAppFilter(app)
 end
 
 firefoxFilter:subscribe(hs.window.filter.windowCreated, function(win)
-        local app = win:application():name()
-        local frame = windowFrames[app]
+	local app = win:application():name()
+	local frame = windowFrames[app]
 
-        enforceFrame(win, frame)
+	enforceFrame(win, frame)
 end)
 
 firefoxFilter:subscribe(hs.window.filter.windowFocused, function(win)
-        local app = win:application():name()
-        local frame = windowFrames[app]
+	local app = win:application():name()
+	local frame = windowFrames[app]
 
-        enforceFrame(win, frame)
+	enforceFrame(win, frame)
 end)
 
 firefoxFilter:subscribe(hs.window.filter.windowMoved, function(win)
-        local app = win:application():name()
-        local frame = windowFrames[app]
+	local app = win:application():name()
+	local frame = windowFrames[app]
 
-        enforceFrame(win, frame)
+	enforceFrame(win, frame)
 end)
