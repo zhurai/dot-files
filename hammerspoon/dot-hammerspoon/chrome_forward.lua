@@ -1,4 +1,3 @@
--- === HELPERS ===
 local function shellOpenInFirefox(url)
     -- escape quotes so open command works
     local u = url:gsub('"', '\\"')
@@ -6,34 +5,32 @@ local function shellOpenInFirefox(url)
     hs.task.new("/bin/sh", nil, { "-c", cmd }):start()
 end
 
--- Run Chrome JXA via hs.task (non-blocking)
 local function getChromeTabURLsAsync(callback)
     local jxa = [[
         (function() {
             var chrome = Application("Google Chrome");
+	    var excluded = [
+		"discord.com",
+		"messenger.com",
+		"twitch.tv/popout",
+		"steamcommunity.com/chat"
+	    ];
             var urls = [];
             if (chrome.running()) {
                 chrome.windows().forEach(function(window) {
                     window.tabs().forEach(function(tab) {
                         var url = tab.url();
-                        if (!(url.includes("discord.com") ||
-                              url.includes("messenger.com") ||
-                              url.includes("twitch.tv/popout"))) ||
-                              url.includes("steamcommunity.com/chat"))) {
-                            urls.push(url);
-                        }
+ 	                if (!excluded.some(ex => url.includes(ex))) {
+        	            urls.push(url);
+                	}
                     });
                 });
-                // now close them after collecting
                 chrome.windows().forEach(function(window) {
                     window.tabs().forEach(function(tab) {
                         var url = tab.url();
-                        if (!(url.includes("discord.com") ||
-                              url.includes("messenger.com") ||
-                              url.includes("twitch.tv/popout"))) ||
-                              url.includes("steamcommunity.com/chat"))) {
-                            tab.close();
-                        }
+                	if (!excluded.some(ex => url.includes(ex))) {
+           	             tab.close();
+   	                }
                     });
                 });
             }
@@ -60,7 +57,6 @@ local function getChromeTabURLsAsync(callback)
     task:start()
 end
 
--- === DEBOUNCED FORWARDING ===
 local debounce = false
 local function forwardNewChromeWindows()
     if debounce then return end
@@ -74,6 +70,5 @@ local function forwardNewChromeWindows()
     end)
 end
 
--- === WINDOW FILTER HOOK ===
 local wf = hs.window.filter.new("Google Chrome")
 wf:subscribe(hs.window.filter.windowCreated, forwardNewChromeWindows)
