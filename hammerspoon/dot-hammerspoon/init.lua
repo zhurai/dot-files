@@ -5,6 +5,7 @@ require("chrome_forward")
 require("singlescreen_handler")
 
 require("activate_terminal")
+require("activate_firefox")
 
 require("windowmgmt_chrome")
 require("windowmgmt_firefox")
