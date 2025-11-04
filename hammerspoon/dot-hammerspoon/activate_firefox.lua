@@ -1,21 +1,22 @@
 local deactivateKeyword = "Feishin"
 local activateKeyword = "Firefox"
+local activateKeyword2 = "Firefox Developer Edition"
 
 local deactivateFilter = hs.window.filter.new(false):setAppFilter(deactivateKeyword)
 local activateFilter = hs.window.filter.new(false):setAppFilter(activateKeyword)
+local activateFilter2 = hs.window.filter.new(false):setAppFilter(activateKeyword2)
 
 local deactivateTimer = nil
 local lastLocalActivity = hs.timer.secondsSinceEpoch()
-local localActivityThreshold = 10 -- seconds
+local localActivityThreshold = 5 -- seconds
 
-local function activateWindow()
-    local wins = activateFilter:getWindows()
+local function activateWindow(filter)
+    local wins = filter:getWindows()
     if #wins > 0 then
         wins[1]:focus()
     end
 end
 
--- periodic idle check instead of one-shot timer
 local function startDeactivateWatcher()
     if deactivateTimer then
         deactivateTimer:stop()
@@ -30,7 +31,8 @@ local function startDeactivateWatcher()
         if focused
             and focused:application():title():find(deactivateKeyword)
             and idle >= localActivityThreshold then
-            activateWindow()
+            activateWindow(activateFilter2)
+            activateWindow(activateFilter)
             deactivateTimer:stop()
             deactivateTimer = nil
         end
