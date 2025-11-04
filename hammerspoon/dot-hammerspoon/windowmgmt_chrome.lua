@@ -1,12 +1,10 @@
 -- Settings
 local applications = { "Google Chrome" }
-local steamChatFrame = { screen = "ASUS", x = 0, y = 0, w = 492, h = 598 }
-local fbMessengerFrame = { screen = "ASUS", x = 1353, y = 0, w = 570, h = 598 }
-local twitchChatFrame = { screen = "ASUS", x = 687, y = 600, w = 280, h = 450 }
+local discordFrame = { screen = "ASUS", x = 0, y = 0, w = 700, h = 550 }
+local fbMessengerFrame = { screen = "ASUS", x = 0, y = 550, w = 700, h = 500 }
 local windowFrames = {
 	["Messenger"] = fbMessengerFrame,
-	["Twitch"] = twitchChatFrame,
-	["Friends List"] = steamChatFrame,
+	["Discord"] = discordFrame,
 }
 
 -- Local Functions

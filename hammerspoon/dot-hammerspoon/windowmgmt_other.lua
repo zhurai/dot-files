@@ -1,6 +1,6 @@
 -- Settings
 local applications = { "WezTerm", "Slack", "Feishin", "Element", "Discord", "Vivaldi" }
-local discordFrame = { screen = "ASUS", x = 553, y = 0, w = 800, h = 598 }
+local discordFrame = { screen = "ASUS", x = 0, y = 0, w = 800, h = 598 }
 local weztermFrame = { screen = "VG", x = 1095, y = 0, w = 825, h = 1071 }
 local musicFrame = { screen = "VG", x = 0, y = 0, w = 553, h = 1050 }
 local windowFrames = {
