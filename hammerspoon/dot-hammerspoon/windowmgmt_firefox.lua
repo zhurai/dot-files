@@ -1,7 +1,7 @@
 -- Settings
 local applications = { "Firefox", "Firefox Developer Edition" }
-local firefoxMainFrame = { screen = "VG", x = 0, y = 500, w = 1020, h = 570 }
-local firefoxReferenceFrame = { screen = "VG", x = 0, y = 0, w = 1020, h = 499 }
+local firefoxMainFrame = { screen = "VG", x = 90, y = 0, w = 1005, h = 1080 }
+local firefoxReferenceFrame = { screen = "ASUS", x = 0, y = 0, w = 1095, h = 499 }
 local windowFrames = {
 	["Firefox"] = firefoxMainFrame,
 	["Firefox Developer Edition"] = firefoxReferenceFrame,
