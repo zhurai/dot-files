@@ -1,4 +1,3 @@
--- === SETTINGS ===
 local slackKeyword = "Slack"
 local discordKeyword = "Discord"
 
@@ -6,6 +5,8 @@ local slackFilter = hs.window.filter.new(false):setAppFilter(slackKeyword)
 local discordFilter = hs.window.filter.new(false):setAppFilter(discordKeyword)
 
 local slackTimer = nil
+local lastLocalActivity = hs.timer.secondsSinceEpoch()
+local localActivityThreshold = 10 -- seconds
 
 -- helper: activate first matching Discord window
 local function activateDiscord()
@@ -15,27 +16,24 @@ local function activateDiscord()
     end
 end
 
-local function startSlackWatcher(win)
-    -- clear any existing timer
+-- periodic idle check instead of one-shot timer
+local function startSlackWatcher()
     if slackTimer then
         slackTimer:stop()
         slackTimer = nil
     end
 
-    slackTimer = hs.timer.doAfter(10, function()
-        local idle = hs.host.idleTime()
-        if idle >= 10 then
-            -- no activity ??? switch immediately
+    slackTimer = hs.timer.doEvery(1, function()
+        local now = hs.timer.secondsSinceEpoch()
+        local idle = now - lastLocalActivity
+        local focused = hs.window.focusedWindow()
+
+        if focused
+            and focused:application():title():find(slackKeyword)
+            and idle >= localActivityThreshold then
             activateDiscord()
-        else
-            -- user was active ??? wait 5 more seconds
-            local followup = hs.timer.doAfter(5, function()
-                -- check still focused on Slack before switching
-                local focused = hs.window.focusedWindow()
-                if focused and focused:title():find(slackKeyword) then
-                    activateDiscord()
-                end
-            end)
+            slackTimer:stop()
+            slackTimer = nil
         end
     end)
 end
@@ -47,12 +45,32 @@ local function stopSlackWatcher()
     end
 end
 
--- subscribe to Slack focus/loss events
+-- event tap for local input
+local activityTap = hs.eventtap.new(
+    {
+        hs.eventtap.event.types.keyDown,
+        hs.eventtap.event.types.flagsChanged,
+        hs.eventtap.event.types.mouseMoved,
+        hs.eventtap.event.types.leftMouseDown,
+        hs.eventtap.event.types.rightMouseDown,
+        hs.eventtap.event.types.otherMouseDown
+    },
+    function(e)
+        lastLocalActivity = hs.timer.secondsSinceEpoch()
+        return false
+    end
+)
+activityTap:start()
+
+-- start/stop Slack watcher based on focus
 slackFilter:subscribe(hs.window.filter.windowFocused, function(win)
-    startSlackWatcher(win)
+    lastLocalActivity = hs.timer.secondsSinceEpoch()
+    startSlackWatcher()
 end)
 
-slackFilter:subscribe({hs.window.filter.windowUnfocused, hs.window.filter.windowDestroyed}, function(win)
-    stopSlackWatcher()
-end)
-
+slackFilter:subscribe(
+    {hs.window.filter.windowUnfocused, hs.window.filter.windowDestroyed},
+    function(win)
+        stopSlackWatcher()
+    end
+)
